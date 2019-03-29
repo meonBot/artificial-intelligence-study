@@ -1,10 +1,11 @@
-#RNN(Recurrent Neural Network, 순환신경망)
+# RNN(Recurrent Neural Network, 순환신경망)
 
 
 1. RNN개념 (시계열, 연결, 메모리, 순환구조, 신경망)
 > 순서가 존재하는 시계열 DATA(길이가 일정 or 길이가 일정하지 않은)를 순환구조의 graph로 연결하여  
  이전 연산의 결과를 메모리에 저장하고 새로운 연산의 입력으로 반복해 사용하는 인공신경망 모델이다.  
- 
+ ![image](https://user-images.githubusercontent.com/45334819/55249812-4e10c180-5290-11e9-845b-b7c0c178276b.png)
+
  
 - SRN(Simple Recurrent Neural Network) 기본함수  
 >함수: h(t) = tanh( Wh(t-1) + Ux(t) + b)  
