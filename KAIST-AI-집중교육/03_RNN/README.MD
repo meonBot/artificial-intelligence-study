@@ -33,38 +33,40 @@
 
 -RNN 간단한 실습예제(hello)
 >https://mobicon.tistory.com/537
-
+  
+  
 - RNN 학습 어려움과 개선방안
-1)Overfitting -> Early Stopping, Dropout, L1/L2 regularization(특정 페라미터를 추가해서 학습을 어렵게 만듦) 
-2)Exploding gradient -> Gradient clipping
-3)Vanishing gradient -> LSTM, GRU 모델 사용
->개선방안 예제:  >https://ratsgo.github.io/deep%20learning/2017/10/10/RNNsty/
+1)Overfitting -> Early Stopping, Dropout, L1/L2 regularization(특정 페라미터를 추가해서 학습을 어렵게 만듦)   
+2)Exploding gradient -> Gradient clipping  
+3)Vanishing gradient -> LSTM, GRU 모델 사용  
+>개선방안 예제:  >https://ratsgo.github.io/deep%20learning/2017/10/10/RNNsty/  
+  
+    
+3. RNN 활용영역  
+1)Time series regression: 시간대별 승객수 추이예측  
+2)Language modeling: Recurrent neural nw lan model (RNN처럼 이전문장단어를 기억하고 다음연산에 활용)  
 
-3. RNN 활용영역
-1)Time series regression: 시간대별 승객수 추이예측
-2)Language modeling: Recurrent neural nw lan model (RNN처럼 이전문장단어를 기억하고 다음연산에 활용)
+- RNN의 변형  
+1)Bidirectional RNN  
+2)Encoder-Decoder(번역),   
+3) Attention...  
+  
+- LSTM (), GRU()  
 
-- RNN의 변형
-1)Bidirectional RNN
-2)Encoder-Decoder(번역), 
-3) Attention...
+  
 
-- LSTM (), GRU()
+  
+- 기타 용어:  
+`hyperbolic(쌍곡선) tangent(tanh) : -1 ~ 1 사이의 비선형적 값을 갖는 활성화 함수  
+`엔트로피(entropy):   흔히 일반인들에게 무질서도라고 알려져있기도 하지만 정확한 개념의 이해를 위해 좋은 말은 아니다.[1] 다른 말로 설명하자면 물질의 상태 변화, 즉 에너지의 전환 과정에서 유용하게 쓸 수 있는 에너지가 줄어드는 정도를 의미한다  
+`gradient: 기울기  
+`vanishing: 사라지는  
+`exploded: 폭발하는  
+`활성화함수(activation function): 입력값의 총합을 출력신호로 변환하는 함수(0 or 1로 수렴). ex) 시그모이드,계단함수, ReLU, tanh  
+  
 
-
-
-
-- 기타 용어:
-`hyperbolic(쌍곡선) tangent(tanh) : -1 ~ 1 사이의 비선형적 값을 갖는 활성화 함수
-`엔트로피(entropy):   흔히 일반인들에게 무질서도라고 알려져있기도 하지만 정확한 개념의 이해를 위해 좋은 말은 아니다.[1] 다른 말로 설명하자면 물질의 상태 변화, 즉 에너지의 전환 과정에서 유용하게 쓸 수 있는 에너지가 줄어드는 정도를 의미한다
-`gradient: 기울기
-`vanishing: 사라지는
-`exploded: 폭발하는
-`활성화함수(activation function): 입력값의 총합을 출력신호로 변환하는 함수(0 or 1로 수렴). ex) 시그모이드,계단함수, ReLU, tanh
-
-
-4. RNN 학습로직 구현방법
-1)Placeholders 세팅: feed data into graph
-2)Model selection: make prediction of given data
-3)Loss function : how well does the mode work 
-4)Optimizer: SGD algorithm that optimizes model weight and bias.
+4. RNN 학습로직 구현방법  
+1)Placeholders 세팅: feed data into graph  
+2)Model selection: make prediction of given data  
+3)Loss function : how well does the mode work   
+4)Optimizer: SGD algorithm that optimizes model weight and bias.  
