@@ -8,6 +8,7 @@
 
  
 - SRN(Simple Recurrent Neural Network) 기본함수  
+![SRN](https://user-images.githubusercontent.com/45334819/55276744-8076f900-533a-11e9-8b51-e78772b4ecbf.jpg)  
 >함수: h(t) = tanh( Wh(t-1) + Ux(t) + b)  
 >설명: 시간 t에 따른 Hidden Layer h(t)는, Hidden Layer(t-1)과 W(weight)의 합성 + U(특정사상행렬)와 x(i)입력값의 합성 + bias(상수값)를  활성화에 적용   
 >Prameter set : W, U, b  
@@ -21,6 +22,7 @@
 
 
 2. RNN 학습, BPTT(BackPropagation through time)  
+![RNN](https://user-images.githubusercontent.com/45334819/55276773-c6cc5800-533a-11e9-8adf-bad243f03523.jpg)  
 - 예제: http://solarisailab.com/archives/1451  
 - RNN학습  
  1)cross-entropy loss L(손실함수) = 시그마( L(Y,Y^)): 매 timestamp에서 예측값과 실제값의 차이의 합 = -시그마(t)시그마(i)(Yi(t) logY^i(t)  
@@ -28,7 +30,8 @@
  3)h(t)  = tanh( Wh(t-1) + Ux(t) + b)  
 
 - BPTT  
->  
+![BPTT](https://user-images.githubusercontent.com/45334819/55276776-da77be80-533a-11e9-9314-b8a9bffed12b.jpg)  
+> http://solarisailab.com/archives/1451
 
 
 -RNN 간단한 실습예제(hello)
@@ -52,9 +55,10 @@
 3)Attention...  
   
 - LSTM (), GRU()  
-
+![LSTM](https://user-images.githubusercontent.com/45334819/55276778-e6fc1700-533a-11e9-9808-115c54c19c98.jpg)  
   
-
+![GRU](https://user-images.githubusercontent.com/45334819/55276781-f4190600-533a-11e9-9ab5-ea25d83ca9e3.jpg)    
+  
   
 - 기타 용어:  
 `hyperbolic(쌍곡선) tangent(tanh) : -1 ~ 1 사이의 비선형적 값을 갖는 활성화 함수  
