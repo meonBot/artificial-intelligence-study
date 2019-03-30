@@ -49,7 +49,7 @@
 - RNN의 변형  
 1)Bidirectional RNN  
 2)Encoder-Decoder(번역),   
-3) Attention...  
+3)Attention...  
   
 - LSTM (), GRU()  
 
