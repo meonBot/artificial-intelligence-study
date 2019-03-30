@@ -179,6 +179,7 @@ act5. RNN -> 주식흐름판단
  >http://jaejunyoo.blogspot.com/2018/01/support-vector-machine-1.html  
 7-2) SVM Kernel Trick  
 
+<hr />
 
 -- 실습1 (집값 예측)  
 0) 파일다운로드: https://github.com/inininini/seongnam   
@@ -204,6 +205,7 @@ act5. RNN -> 주식흐름판단
 3) test, validation data분리 -> 학습(로딩,fit,predict)  
 4) 성능평가, 이미지화  
 
+<hr />
 
 * 기타: 파이썬을 AI에서 주로 쓰는 이유 : http://www.ciokorea.com/news/38148  
 1. 프로그래밍이 단순해진다  
