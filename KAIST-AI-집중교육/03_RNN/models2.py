@@ -185,7 +185,7 @@ class BasicLSTMCell(RNNCell):
     print(inputs)
     print(state)
     """Long short-term memory cell (LSTM)."""
-	#h:before hydden layer, c:before cell
+    #h:before hydden layer, c:before cell
     c, h = state
 
     ### your code here ###
@@ -196,7 +196,8 @@ class BasicLSTMCell(RNNCell):
     with tf.variable_scope("o"):
         o = tf.sigmoid(_linear([inputs, h], self._num_units, True))
     with tf.variable_scope("g"):
-        g = tf.sigmoid(_linear([inputs, h], self._num_units, True))
+        g = self._activation(_linear([inputs, h], self._num_units, True))
+        #g = tf.sigmoid(_linear([inputs, h], self._num_units, True))
 
     new_c = f * c + i *g
     new_h = o * self._activation(new_c)
