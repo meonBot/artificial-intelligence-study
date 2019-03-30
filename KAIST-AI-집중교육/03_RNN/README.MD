@@ -75,6 +75,6 @@
 3)Loss function : how well does the mode work   
 4)Optimizer: SGD algorithm that optimizes model weight and bias.  
 
-5. 실습
+5. 실습  
 5-1) tensorflow 모델(RNN, LSTM, GRU)로 주식data 학습모델 최적화(python, Jupyter)  
 5-2) RNN, LSTM, GRU python   
