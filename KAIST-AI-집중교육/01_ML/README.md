@@ -52,9 +52,10 @@ act4. CNN -> 손글씨 복원
 > Instance: 각각의 테스트 case  
 > Model: 머신러닝 메소드(테크닉) > 사용할 알고리즘  
 - 종류  
- > 분류(classification),   
- > 회귀(regression) :  데이터를 반복적으로 관찰하면 어떤 패턴으로 회귀한다는 것을 의미합니다.  
-  :http://aidev.co.kr/learning/5264  
+ - 분류(classification)  
+ - 회귀(regression) 
+  : 데이터를 반복적으로 관찰하면 어떤 패턴으로 회귀한다는 것을 의미합니다.  
+  : http://aidev.co.kr/learning/5264  
    >예측값이 y'고 실제값이 y라면 오차인 (y' - y)^2을 더하여 비용함수(cost function)를 만듭니다.   
     이는 w와 b의 2차 함수의 U자 모양 그래프로 나타낼 수 있는데 각각을 편미분 하여 기울기를 구하면 파라미터가 어느 방향으로 이동해야 오차를 줄일 수 있는지 알 수 있습니다.
    이렇게 '데이터 -> 오차 -> 비용함수 -> 경사하강법 학습'이 머신러닝의 공통적인 프로세스입니다.  
@@ -75,7 +76,7 @@ act4. CNN -> 손글씨 복원
 => 개선방안: test/validation하는 데이트를 나누고, 섞어가면서 진행(page28)  
 
 4) 머신러닝의 과정  
-4-1)분석  
+4-1) 분석  
 > Big Picture  
 > Get data  
 > Discover,Visualize the data -> Gain Insights : data를 시각적으로 분석하여 필터링할 대상 확인  
