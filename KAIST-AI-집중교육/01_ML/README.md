@@ -80,11 +80,14 @@ act4. CNN -> 손글씨 복원
 > Big Picture  
 > Get data  
 > Discover,Visualize the data -> Gain Insights : data를 시각적으로 분석하여 필터링할 대상 확인  
+
 4-2) 전처리(Pre-Processing)  
 > prepare data : 공백->유효값 대체, 문자열->숫자 치환 등  
 > Feature scaling : 히스토그램 시각화등 -> 평균, 표준화  
+
 4-3) 학습(Training)  
 > Select and Train a Model(메소드, 알로리즘): 사용할 AI 알고리즘 선택  
+
 4-4) 평가  
 > 결과평가(성능측정,비교)  
   
@@ -99,7 +102,6 @@ act4. CNN -> 손글씨 복원
  > Stochastic Gradient Descent(SGD) classifier(SVM) : 주어진 data가 어느 카테고리에 속할지 판단  
   :https://ko.wikipedia.org/wiki/%EC%84%9C%ED%8F%AC%ED%8A%B8_%EB%B2%A1%ED%84%B0_%EB%A8%B8%EC%8B%A0  
  > Detect image  
-
 
 5-2) confusion matrix > 추가정리 필요  
 >precesion :   
