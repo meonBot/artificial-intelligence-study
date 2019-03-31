@@ -28,19 +28,19 @@ act4. CNN -> 손글씨 복원
   
 - 1일차(3/15)  
 
-1) 인공신경망 학습:  
+### 1. 인공신경망 학습:  
 > y = f ( 합Wi Xi + b)   
 > w(weight), b(constants)를 최척화하는 과정  
 > 은닉층(Layer)에서  input 벡터에 W(가중치) 합산  
    -> Function(LeRu: 0미만=0,0초과=1) 통과  : constants 결정?  
    -> 에러계산(미분->최적화)  
 
-2) 머신러닝 과제:  
+### 2. 머신러닝 과제:  
 -불충분한 data, 대표성이 없는 훈련data...  
 -underfitting, Overfitting  
  > Cross-validation(test, val  set  나누고, 크로스해서 테스트)  
 
-3) 머신러닝의 종류  
+### 3. 머신러닝의 종류  
 -supervised/un~/ Reinforcemen : 지도/비지도/강화 학습  
  >지도학습: 정답을 알려주고 학습  
  >비지도: 군집화하기  
@@ -75,7 +75,7 @@ act4. CNN -> 손글씨 복원
  : Visualazation(히스토그램등) -> nomalization 필요..  
 => 개선방안: test/validation하는 데이트를 나누고, 섞어가면서 진행(page28)  
 
-4) 머신러닝의 과정  
+### 4. 머신러닝의 과정  
 4-1) 분석  
 > Big Picture  
 > Get data  
@@ -91,7 +91,7 @@ act4. CNN -> 손글씨 복원
 4-4) 평가  
 > 결과평가(성능측정,비교)  
   
-5) Classification  
+### 5. Classification  
 5-1) MNIST dataset (0~9손글씨 7만장 학습)  
 > data: 28X28 행렬에 0/1로 글씨(검정잉크) 존재유무 표시  
 > target(lable): 0~9의 정답을 표시  
@@ -113,7 +113,7 @@ act4. CNN -> 손글씨 복원
 > Multiclass Classifier: SoftMax classifier  
 
 
-6) Training Model  
+### 6. Training Model  
 6-1) Linear Regression  
  > 선을 그었을때 오류가 최소가 되는 비용함수를 추론하는 최소제곱 공식...?  
  > LinearRegression(), Page64  
@@ -174,7 +174,7 @@ act4. CNN -> 손글씨 복원
  : linear_model.LogisticRegression(multi_calss="multinomial", slover="lbfgs", C=10)  
 
 
-7) Support Vector Machine(SVM) > 정리안됨(skip)  
+### 7. Support Vector Machine(SVM) > 정리안됨(skip)  
 7-1) 만들어진 분류 모델은 데이터가 사상된 공간에서 경계로 표현되는데 SVM 알고리즘은 그 중 가장 큰 폭을 가진 경계를 찾는 알고리즘이다  
  >https://ratsgo.github.io/machine%20learning/2017/05/23/SVM/  
  >http://jaejunyoo.blogspot.com/2018/01/support-vector-machine-1.html  
