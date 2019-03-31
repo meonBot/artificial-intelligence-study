@@ -6,31 +6,30 @@
 - KAIST AI집중 교육일정  
 1)머신러닝   
 2)딥러닝  
+3)RNN   
 4)CNN  
-3)RNN    
-  
+ 
 -실습  
 act1.   
 act2. 타이타닉 분류  
 act3. 텐서플로우+DNN -> 영화추천시스템, 이름->국적도출  
 act4. CNN -> 손글씨 복원  
-act5. RNN -> 주식흐름판단  
-  
+act5. RNN -> 주식흐름판단    
   
 - Tip
 1)구글 GPU(연속12시간) 사용가능..  
-2)SW Tool & 학습  
-2-1)Python: https://wikidocs.net/book/1  
-2-2)Tensorflow: https://www.tensorflow.org/guide  
-2-3)Numpy: https://docs.scipy.org/doc/numpy/  
-2-4)Matplotlib: https://matplotlib.org/index.html  
-2-5)Skearn,kunear)model.Lasso: https://scikit-learn.org/stable/  
+2) SW Tool & 학습    
+  2-1) Python: https://wikidocs.net/book/1  
+  2-2) Tensorflow: https://www.tensorflow.org/guide  
+  2-3) Numpy: https://docs.scipy.org/doc/numpy/    
+  2-4) Matplotlib: https://matplotlib.org/index.html  
+  2-5) Skearn,kunear)model.Lasso: https://scikit-learn.org/stable/  
 
 <hr />
   
 - 1일차(3/15)  
 
-1) 인공신경망 DNN 학습:  
+1) 인공신경망 학습:  
 > y = f ( 합Wi Xi + b)   
 > w(weight), b(constants)를 최척화하는 과정  
 > 은닉층(Layer)에서  input 벡터에 W(가중치) 합산  
