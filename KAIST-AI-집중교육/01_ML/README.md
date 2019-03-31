@@ -10,11 +10,10 @@
 4)CNN  
  
 -실습  
-act1.   
-act2. 타이타닉 분류  
-act3. 텐서플로우+DNN -> 영화추천시스템, 이름->국적도출  
+act1. California Housing Price, Iris, Titanic
+act2. 텐서플로우+DNN -> 영화추천시스템, 이름->국적도출  
+act3. RNN -> 주식흐름판단    
 act4. CNN -> 손글씨 복원  
-act5. RNN -> 주식흐름판단    
   
 - Tip
 1)구글 GPU(연속12시간) 사용가능..  
