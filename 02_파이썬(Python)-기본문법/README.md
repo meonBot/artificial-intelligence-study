@@ -2,4 +2,13 @@
 
 ### 참고: 밑바닥부터 시작하는 딥러닝
 
-https://www.evernote.com/shard/s222/sh/cbdefc88-41d7-4b88-b718-aaf9659262c0/15f336ad07be694497a3c586a0ed14cc
+1. 기본문법(변수,연산,함수,클래스,라이브러리 로딩, 그래프 등)  
+https://www.evernote.com/shard/s222/sh/cbdefc88-41d7-4b88-b718-aaf9659262c0/15f336ad07be694497a3c586a0ed14cc  
+
+2. 파일입출력
+
+3. 문자열  
+
+4. 크롤링?
+
+5. 기타...
