@@ -8,7 +8,7 @@
 
 2. 초급->중급자로 나아가기  
 2-1) 인터넷 강좌활용(알고리즘 해설, tensorflow소스 해설등)     
- > https://hunkim.github.io/ml/     
+ : https://hunkim.github.io/ml/     
 2-2) tensorflow 초급/중급 도서 활용: tensorflow소스코드에서 멘붕이 온다면 tensorfow Language공부부터 차근차근 필요  
 
 3. 중급 숙련자로 나아가기  
