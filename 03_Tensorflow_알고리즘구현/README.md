@@ -26,6 +26,11 @@
 - https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/04_3_linear_regression_tf_GradientDescentOptimizer.ipynb  
 <hr />
 
+### 4. Matrix(행렬) 연산  
+
+
+### 5. Logistic Regression  
+
 
  
 
