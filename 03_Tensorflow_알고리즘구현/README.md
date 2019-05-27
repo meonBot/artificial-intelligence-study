@@ -29,7 +29,16 @@
 <hr />
 
 ### 4. Matrix(행렬) 연산  
-
+- Matrix multiplication
+![image](https://user-images.githubusercontent.com/45334819/58432740-decc1800-80ee-11e9-95a4-40d7c168ce50.png)  
+- numpy slice
+![image](https://user-images.githubusercontent.com/45334819/58432742-e2f83580-80ee-11e9-8c0c-3d33243386a2.png)  
+- google colab fileUpload   
+> #파일업로드창 출력  
+> uploaded = files.upload()  
+> #업로드한 파일정보 출력  
+> for fn in uploaded.keys():  
+>  print('Upload file "{name}" with length {length} bytes'.format(name=fn, length=len(uploaded[fn])))  
 
 ### 5. Logistic Regression  
 
