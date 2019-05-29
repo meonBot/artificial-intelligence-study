@@ -47,8 +47,17 @@ for fn in uploaded.keys():
 - 선형함수(wX+b)에서 예외적인 학습data(튀는값)이 발생할때 오차가 커지는 문제를 개선하기위해,  
   Activation(활성화) 함수로 sigmoid함수를 사용해서 0~1로 수렴하는 H(x)가설(hypothesis)를 찾아낸다.  
 - 이때, Cost함수는 local-minimum이 발생할수 있는데, -Log를 취해서 global-minimum을 찾아갈수 있도록 했다.  
-![image](https://user-images.githubusercontent.com/45334819/58574443-f1735800-827a-11e9-9e1b-6a9837355a7a.png)  
+![image](https://user-images.githubusercontent.com/45334819/58574443-f1735800-827a-11e9-9e1b-6a9837355a7a.png) 
+- tensorflow 소스에서는 수식그대로 구현하면 됨.  
+<pre>
+# Hypothesis using sigmoid: tf.div(1., 1. + tf.exp(tf.matmul(X, W)))  
+hypothesis = tf.sigmoid(tf.matmul(X, W) + b)  
+# cost/loss function  
+cost = -tf.reduce_mean(Y * tf.log(hypothesis) + (1 - Y) * tf.log(1 - hypothesis))  
+train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)  
+</pre>
 <hr />
+
 
 ## 6. Softmax Regression  
 
