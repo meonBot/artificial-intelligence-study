@@ -44,6 +44,13 @@ for fn in uploaded.keys():
 </pre>  
 
 ## 5. Logistic Regression  
+- 선형함수(wX+b)에서 예외적인 학습data(튀는값)이 발생할때 오차가 커지는 문제를 개선하기위해,  
+  Activation(활성화) 함수로 sigmoid함수를 사용해서 0~1로 수렴하는 H(x)가설(hypothesis)를 찾아낸다.  
+![image](https://user-images.githubusercontent.com/45334819/58574443-f1735800-827a-11e9-9e1b-6a9837355a7a.png)  
+<hr />
+
+## 6. Softmax Regression  
+
 
 
  
