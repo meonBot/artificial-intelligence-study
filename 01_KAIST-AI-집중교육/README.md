@@ -7,6 +7,15 @@
   
 <hr>
 
-### Sumarry
- 
+### 교육과정  
+
+#### 1. Machine learning with Scikit-learn
+> 머신러닝의 기본과 Scikit-learn 라이브러리를 이용한 구현  
+
+#### 2. Deep learning with Tensorflow
+> 딥러닝(심층 신경망 학습)을 텐서플로우 프레임워크로 구현  
+
+#### 3. Recurrent Neural Net (RNN)  
+
+#### 4. Convolutional Neural Net (CNN)  
  
