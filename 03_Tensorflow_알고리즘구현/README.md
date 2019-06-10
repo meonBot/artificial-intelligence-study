@@ -33,6 +33,7 @@
 ![image](https://user-images.githubusercontent.com/45334819/58432740-decc1800-80ee-11e9-95a4-40d7c168ce50.png)  
 - numpy slice
 ![image](https://user-images.githubusercontent.com/45334819/58432742-e2f83580-80ee-11e9-8c0c-3d33243386a2.png)  
+![image](https://user-images.githubusercontent.com/45334819/59210253-2622d000-8be8-11e9-8bf6-bb04545303ba.png)  
 - google colab fileUpload   
 <pre>
 #파일업로드창 출력  
@@ -60,6 +61,18 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
 
 
 ## 6. Softmax Regression  
+- Softmax Regression(Multicasss Logistic) : 여러개의 class중에 확률이 가장 큰 값을 선택하여 one-hot encoding으로 표시  
+- one-hot encoding: 여러 class를 확률이 가장 높은 값을 1, 그외는 0으로 표시  
+- cross entropy(혼잡도, 비): cost function에서 cost 또는 loss를 의미  
+- reshape : one-hot encoding등에서 출력값의 array갯수를 맞추기위해 shape를 변경하는 것  
+![image](https://user-images.githubusercontent.com/45334819/59210684-18ba1580-8be9-11e9-97d5-f9b3ea8ce9fc.png)
+![image](https://user-images.githubusercontent.com/45334819/59210689-1c4d9c80-8be9-11e9-8085-f78ee52ca7a1.png)
+
+- tensorflow softmax 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/06_1_softmax_classifier.ipynb  
+- tensorflow softmax_cross_entropy_with_logits 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/06_2_softmax_cross_entropy_with_logits.ipynb  
+
+## 7. 
+
 
 
 
