@@ -6,8 +6,9 @@
 
 <hr />
 
-### 참고2. 점프 투 파이썬  
-https://wikidocs.net/13  
+### 참고2. 웹사이트
+ - 점푸투파이썬: https://wikidocs.net/13  
+ - 파이썬 자습서: https://docs.python.org/ko/3/tutorial/index.html  
 #### 1. 
 
 <hr />
