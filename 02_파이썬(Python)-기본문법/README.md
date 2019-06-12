@@ -9,6 +9,7 @@
 ### 참고2. 웹사이트
  - 점푸투파이썬: https://wikidocs.net/13  
  - 파이썬 자습서: https://docs.python.org/ko/3/tutorial/index.html  
+ - 왕초보를 위한 파이썬: https://wikidocs.net/77  
 #### 1. 
 
 <hr />
