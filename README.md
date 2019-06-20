@@ -2,7 +2,7 @@
 
 ### 1. 오프라인 교육  
 #### 1-1. KAIST-AI-집중교육 
-#### 1-2. KOSTA-Word Embedding  
+#### 1-2. KOSTA-Chatbot(Word Embedding)-By-Keras  
 
 <br>
 
