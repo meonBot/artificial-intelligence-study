@@ -71,23 +71,24 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
 
 - tensorflow softmax 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/06_1_softmax_classifier.ipynb  
 - tensorflow softmax_cross_entropy_with_logits 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/06_2_softmax_cross_entropy_with_logits.ipynb  
-- sckit-learn libarary 예제: 
+- sckit-learn libarary 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/06_3_softmax_classifier_by_sckit_learn.ipynb  
 <hr />  
 
 ## 7. ML의 실용과 몇가지 팁  
-### 7-1) Learning-rate, Preprocessing(Standarization), Overfitting(Regularization):  
+### 7-1) Learning-rate, Preprocessing(Normalization), Overfitting(Regularization):  
  1. Learning-rate  
   - 보통 0.01정도에서 시작  
   - cost변화를 관찰할 필요있음  
   - 너무크면, weight최소점을 찾지못하고 헤메고, 너무 작으면 빨리 수렴하지 않음 
   ![image](https://user-images.githubusercontent.com/45334819/59365066-dcb2bc00-8d72-11e9-818d-5a84cb6818d4.png)
- 2. Preprocessing  
-  - 값의 분포가 일정하도록 조정하여 좋은 성능을 갖도록 함  
-  - Standarization(표준화):  
+ 2. Preprocessing (->Normalization: 정규화) 
+  - 입력값(X)의 분포가 일정하도록 조정하여 좋은 성능을 갖도록 함(학습이 잘 안될때 확인필요)
+  - ex) Standarization(표준화):  
   ![image](https://user-images.githubusercontent.com/45334819/59364987-b856df80-8d72-11e9-9a6d-79b004c8272b.png)
  3. Overfitting  
-  - 학습 data에만 최적하된 모델을 만들어, 테스트 data에 성능이 좋지 않음
-  - Regularization(일반화): 너무 큰 입력값에 weight가 구부러지게 되는데? 이를 펴는 효과?:  
+  - 학습 data에만 최적하된 모델을 만들어, 테스트 data에 성능이 좋지 않음 (Weight가 특정값에 크게 튀면서 구브러짐)
+  - Regularization(일반화): 너무 큰 입력값에 weight가 구부러지지 않게 펴는 효과
+   > Regularization을 위해 Weight값을 제곱하고 평균낸 값을 더
   ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)
 
 ### 7-2)  
