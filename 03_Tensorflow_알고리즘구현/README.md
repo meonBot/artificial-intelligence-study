@@ -87,7 +87,7 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
   ![image](https://user-images.githubusercontent.com/45334819/59364987-b856df80-8d72-11e9-9a6d-79b004c8272b.png)
  3. Overfitting  
   - 학습 data에만 최적하된 모델을 만들어, 테스트 data에 성능이 좋지 않음
-  - Regularization(): 너무 큰 입력값에 weight가 구부러지게 되는데? 이를 펴는 효과?:  
+  - Regularization(일반화): 너무 큰 입력값에 weight가 구부러지게 되는데? 이를 펴는 효과?:  
   ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)
 
 ### 7-2)  
