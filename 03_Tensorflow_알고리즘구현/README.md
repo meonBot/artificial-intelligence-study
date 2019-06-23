@@ -88,7 +88,7 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
  3. Overfitting  
   - 학습 data에만 최적하된 모델을 만들어, 테스트 data에 성능이 좋지 않음 (Weight가 특정값에 크게 튀면서 구브러짐)
   - Regularization(일반화): 너무 큰 입력값에 weight가 구부러지지 않게 펴는 효과
-   > Regularization을 위해 Weight값을 제곱하고 평균낸 값을 더
+    (Regularization을 위해 Weight값을 제곱하고 평균낸 값을 더함 ) 
   ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)
 
 ### 7-2)  
