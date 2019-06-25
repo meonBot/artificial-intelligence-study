@@ -47,7 +47,7 @@ for fn in uploaded.keys():
 ## 5. Logistic Regression  
 - 선형함수(wX+b)에서 예외적인 학습data(튀는값)이 발생할때 오차가 커지는 문제를 개선하기위해,  
   Activation(활성화) 함수로 sigmoid함수를 사용해서 0~1로 수렴하는 H(x)가설(hypothesis)를 찾아낸다.  
-- 이때, Cost함수는 local-minimum이 발생할수 있는데, -Log를 취해서 global-minimum을 찾아갈수 있도록 했다.  
+- <b>이때, Cost함수는 local-minimum이 발생할수 있는데, -Log를 취해서 global-minimum을 찾아갈수 있도록 했다.  </b>
 ![image](https://user-images.githubusercontent.com/45334819/58574443-f1735800-827a-11e9-9e1b-6a9837355a7a.png) 
 - tensorflow 소스에서는 수식그대로 구현하면 됨.  
 <pre>
@@ -64,7 +64,7 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
 ## 6. Softmax Regression  
 - Softmax Regression(Multicasss Logistic) : 여러개의 class중에 확률이 가장 큰 값을 선택하여 one-hot encoding으로 표시  
 - one-hot encoding: 여러 class를 확률이 가장 높은 값을 1, 그외는 0으로 표시  
-- cross entropy(혼잡도, 비): cost function에서 cost 또는 loss를 의미  
+- cross entropy(혼잡도, 비): cost function에서 cost 또는 loss를 의미  (가설의 결과값과 실제값의 차이를 최소화 하는 방식)  
 - reshape : one-hot encoding등에서 출력값의 array갯수를 맞추기위해 shape를 변경하는 것  
 ![image](https://user-images.githubusercontent.com/45334819/59210684-18ba1580-8be9-11e9-97d5-f9b3ea8ce9fc.png)
 ![image](https://user-images.githubusercontent.com/45334819/59210689-1c4d9c80-8be9-11e9-8085-f78ee52ca7a1.png)
