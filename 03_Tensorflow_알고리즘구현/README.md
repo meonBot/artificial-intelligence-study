@@ -47,7 +47,7 @@ for fn in uploaded.keys():
 ## 5. Logistic Regression  
 - 선형함수(wX+b)에서 예외적인 학습data(튀는값)이 발생할때 오차가 커지는 문제를 개선하기위해,  
   Activation(활성화) 함수로 sigmoid함수를 사용해서 0~1로 수렴하는 H(x)가설(hypothesis)를 찾아낸다.  
-- 이때, Cost함수는 local-minimum이 발생할수 있는데, -Log를 취해서 global-minimum을 찾아갈수 있도록 했다.  
+- <b>이때, Cost함수는 local-minimum이 발생할수 있는데, -Log를 취해서 global-minimum을 찾아갈수 있도록 했다.  </b>
 ![image](https://user-images.githubusercontent.com/45334819/58574443-f1735800-827a-11e9-9e1b-6a9837355a7a.png) 
 - tensorflow 소스에서는 수식그대로 구현하면 됨.  
 <pre>
@@ -64,7 +64,7 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
 ## 6. Softmax Regression  
 - Softmax Regression(Multicasss Logistic) : 여러개의 class중에 확률이 가장 큰 값을 선택하여 one-hot encoding으로 표시  
 - one-hot encoding: 여러 class를 확률이 가장 높은 값을 1, 그외는 0으로 표시  
-- cross entropy(혼잡도, 비): cost function에서 cost 또는 loss를 의미  
+- cross entropy(혼잡도, 비): cost function에서 cost 또는 loss를 의미  (가설의 결과값과 실제값의 차이를 최소화 하는 방식)  
 - reshape : one-hot encoding등에서 출력값의 array갯수를 맞추기위해 shape를 변경하는 것  
 ![image](https://user-images.githubusercontent.com/45334819/59210684-18ba1580-8be9-11e9-97d5-f9b3ea8ce9fc.png)
 ![image](https://user-images.githubusercontent.com/45334819/59210689-1c4d9c80-8be9-11e9-8085-f78ee52ca7a1.png)
@@ -84,15 +84,17 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
   - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/07_1_Learing_rate_test.ipynb  
  2. Preprocessing (->Normalization: 정규화) 
   - 입력값(X)의 분포가 일정하도록 조정하여 좋은 성능을 갖도록 함(학습이 잘 안될때 확인필요)
-  - ex) Standarization(표준화):  
+  - ex1) Standarization(표준화):  
   ![image](https://user-images.githubusercontent.com/45334819/59364987-b856df80-8d72-11e9-9a6d-79b004c8272b.png)
+  - ex2) MinMax Scaling  
   - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/07_2_linear_regression_min_max(normalization).ipynb  
  3. Overfitting  
   - 학습 data에만 최적하된 모델을 만들어, 테스트 data에 성능이 좋지 않음 (Weight가 특정값에 크게 튀면서 구브러짐)
-  - Regularization(일반화): 너무 큰 입력값에 weight가 구부러지지 않게 펴는 효과
+  - 개선방법1 > Regularization(일반화): 너무 큰 입력값에 weight가 구부러지지 않게 펴는 효과
     (Regularization을 위해 Weight값을 제곱하고 평균낸 값을 더함 ) 
-  ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)
-
+  ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)  
+  - 개선방법2 > <b>Weight 값 초기화( ex: Xavier Initializer, He initializer 등)</b>  
+  - 개선방법3 > dropout  
 
 <hr />
 
