@@ -90,9 +90,10 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
   - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/07_2_linear_regression_min_max(normalization).ipynb  
  3. Overfitting  
   - 학습 data에만 최적하된 모델을 만들어, 테스트 data에 성능이 좋지 않음 (Weight가 특정값에 크게 튀면서 구브러짐)
-  - Regularization(일반화): 너무 큰 입력값에 weight가 구부러지지 않게 펴는 효과
+  - 개선방법1 > Regularization(일반화): 너무 큰 입력값에 weight가 구부러지지 않게 펴는 효과
     (Regularization을 위해 Weight값을 제곱하고 평균낸 값을 더함 ) 
-  ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)
+  ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)  
+  - 개선방법2 > <b>Weight 값 초기화( ex: Xavier Initializer, He initializer 등)</b>  
 
 
 <hr />
