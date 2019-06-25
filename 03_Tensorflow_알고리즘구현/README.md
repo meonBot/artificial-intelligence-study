@@ -84,8 +84,9 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
   - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/07_1_Learing_rate_test.ipynb  
  2. Preprocessing (->Normalization: 정규화) 
   - 입력값(X)의 분포가 일정하도록 조정하여 좋은 성능을 갖도록 함(학습이 잘 안될때 확인필요)
-  - ex) Standarization(표준화):  
+  - ex1) Standarization(표준화):  
   ![image](https://user-images.githubusercontent.com/45334819/59364987-b856df80-8d72-11e9-9a6d-79b004c8272b.png)
+  - ex2) MinMax Scaling  
   - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/07_2_linear_regression_min_max(normalization).ipynb  
  3. Overfitting  
   - 학습 data에만 최적하된 모델을 만들어, 테스트 data에 성능이 좋지 않음 (Weight가 특정값에 크게 튀면서 구브러짐)
