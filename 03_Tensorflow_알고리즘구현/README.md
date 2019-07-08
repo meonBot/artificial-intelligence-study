@@ -118,6 +118,7 @@ cast
 stack: 행렬합치기
 ones_like(x).eval(), zeros_like(x).eval(): 숫자 0,1로 채우기
 </pre>
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/08_tf_manipulation.ipynb
 
 <hr />
 
@@ -132,11 +133,14 @@ W2 = tf.Variable(tf.random_normal([2, 1]), name='weight2')
 b2 = tf.Variable(tf.random_normal([1]), name='bias2')
 hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
 </pre>
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/09_1_tf_xor_nn.ipynb  
 
 ### 9-2) Tensorboard를 활용한 cost, accuracy의 graphical한 확인방법
 ![image](https://user-images.githubusercontent.com/45334819/60822629-cb799580-a1e0-11e9-9e8f-575227b9b62f.png)
 ![image](https://user-images.githubusercontent.com/45334819/60822635-cf0d1c80-a1e0-11e9-82be-9bafa884c9f4.png)
 - tensorboard 터미널 실행명령어 ex) tensorboard --logdir=./logs/xor_logs
 - 소스코드 구동후, 접속 URL: localhost:6006  
- 
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/9_2_tensorboard.ipynb
+
+
 
