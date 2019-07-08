@@ -98,6 +98,29 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
 
 <hr />
 
+## 8. Tensor manipulation  
+<pre>
+list = [a, b, c]
+vector = 1차원 list
+matrix = np.array() : numpy 행렬
+matrix.ndim : rank(차원)
+matrix.shape : shape(차원별 array의 원소 수)
+random_normal, random_uniform
+reduce_mean : 평균
+reduce_sum: 합계
+argmax: 최대값
+reshape/squeeze/expand_dims
+> reshape은 원하는 shape를 직접 입력하여 바꿀 수 있다. 특히 shape에 -1를 입력하면 고정된 차원은 우선 채우고 남은 부분을 알아서 채워준다.
+> squeeze는 차원 중 사이즈가 1인 것을 찾아 스칼라값으로 바꿔 해당 차원을 제거한다.
+> expand_dims는 axis로 지정된 차원을 추가한다.
+one_hot
+cast
+stack: 행렬합치기
+ones_like(x).eval(), zeros_like(x).eval(): 숫자 0,1로 채우기
+</pre>
+
+<hr />
+
 ## 9.Deep Neural Network를 활용한 XOR문제해결과 Backpropagation  
 ### 9-1) Layer를 2개이상 Deep하게 구성하여 XOR문제 해결가능
 <pre> `python
