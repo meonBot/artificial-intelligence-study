@@ -98,7 +98,22 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
 
 <hr />
 
+## 9.Deep Neural Network를 활용한 XOR문제해결과 Backpropagation  
+### 9-1) Layer를 2개이상 Deep하게 구성하여 XOR문제 해결가능
+<pre> `python
+W1 = tf.Variable(tf.random_normal([2, 2]), name='weight1')
+b1 = tf.Variable(tf.random_normal([2]), name='bias1')
+layer1 = tf.sigmoid(tf.matmul(X, W1) + b1)
 
+W2 = tf.Variable(tf.random_normal([2, 1]), name='weight2')
+b2 = tf.Variable(tf.random_normal([1]), name='bias2')
+hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
+</pre>
 
+### 9-2) Tensorboard를 활용한 cost, accuracy의 graphical한 확인방법
+![image](https://user-images.githubusercontent.com/45334819/60822629-cb799580-a1e0-11e9-9e8f-575227b9b62f.png)
+![image](https://user-images.githubusercontent.com/45334819/60822635-cf0d1c80-a1e0-11e9-82be-9bafa884c9f4.png)
+- tensorboard 터미널 실행명령어 ex) tensorboard --logdir=./logs/xor_logs
+- 소스코드 구동후, 접속 URL: localhost:6006  
  
 
