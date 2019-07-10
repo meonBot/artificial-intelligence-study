@@ -98,7 +98,49 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
 
 <hr />
 
+## 8. Tensor manipulation  
+<pre>
+list = [a, b, c]
+vector = 1차원 list
+matrix = np.array() : numpy 행렬
+matrix.ndim : rank(차원)
+matrix.shape : shape(차원별 array의 원소 수)
+random_normal, random_uniform
+reduce_mean : 평균
+reduce_sum: 합계
+argmax: 최대값
+reshape/squeeze/expand_dims
+> reshape은 원하는 shape를 직접 입력하여 바꿀 수 있다. 특히 shape에 -1를 입력하면 고정된 차원은 우선 채우고 남은 부분을 알아서 채워준다.
+> squeeze는 차원 중 사이즈가 1인 것을 찾아 스칼라값으로 바꿔 해당 차원을 제거한다.
+> expand_dims는 axis로 지정된 차원을 추가한다.
+one_hot
+cast
+stack: 행렬합치기
+ones_like(x).eval(), zeros_like(x).eval(): 숫자 0,1로 채우기
+</pre>
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/08_tf_manipulation.ipynb
+
+<hr />
+
+## 9.Deep Neural Network를 활용한 XOR문제해결과 Backpropagation  
+### 9-1) Layer를 2개이상 Deep하게 구성하여 XOR문제 해결가능
+<pre> `python
+W1 = tf.Variable(tf.random_normal([2, 2]), name='weight1')
+b1 = tf.Variable(tf.random_normal([2]), name='bias1')
+layer1 = tf.sigmoid(tf.matmul(X, W1) + b1)
+
+W2 = tf.Variable(tf.random_normal([2, 1]), name='weight2')
+b2 = tf.Variable(tf.random_normal([1]), name='bias2')
+hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
+</pre>
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/09_1_tf_xor_nn.ipynb  
+
+### 9-2) Tensorboard를 활용한 cost, accuracy의 graphical한 확인방법
+![image](https://user-images.githubusercontent.com/45334819/60822629-cb799580-a1e0-11e9-9e8f-575227b9b62f.png)
+![image](https://user-images.githubusercontent.com/45334819/60822635-cf0d1c80-a1e0-11e9-82be-9bafa884c9f4.png)
+- tensorboard 터미널 실행명령어 ex) tensorboard --logdir=./logs/xor_logs
+- 소스코드 구동후, 접속 URL: localhost:6006  
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/9_2_tensorboard.ipynb
 
 
- 
 
