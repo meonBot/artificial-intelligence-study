@@ -4,9 +4,40 @@
 - 교육과정(강의 Topic)  
 
 <hr />
+
 ## Word Embedding 정리  
 
-### 1. 개념  
+### 1. 개념정리
+
+#### 1-1. Bag of Words  
+- 딥러닝 이전에 가장 많이 사용되던 모델   
+- 문장에서 나타난 단어들의 인덱스를 저장(보통 빈도수도 같이 저장)  
+- 보통 One-Hot 인코딩을 사용(굉장히 코그 sparse한 벡터, 영어의 경우 2만(20k)의 단어가 사용??)  
+  1. 단어들의 관계가 전혀 포현되지 못함  
+  2. 단어의 순서도 표현이 안됨  
+> 옥스포드 영어사전은 단어가 75만개라고 함  
+- 보통 3개의 특수단어 존재: SOS(Start of Sentence), EOS(End Of Sentense), UNKNOWN(모르는 단어)  
+![image](https://user-images.githubusercontent.com/45334819/61086181-245d5e00-a46d-11e9-8b82-02ab55331f1a.png)
+
+#### 1-2. Word Embedding
+##### word embedding 이란?
+- W/E 목표: 벡터 공간의 축소(Dense), 단어간의 의미관계가 벤턱 공간에 기하 관계로 표현  
+![image](https://user-images.githubusercontent.com/45334819/61086658-5d4a0280-a46e-11e9-8b30-9a578f847b90.png)
+
+- 두가지 방식의 모델 트레이닝
+ 1. CBOW(Continuos bag of words) : 중심단어를 비우고 window를 옮기면서 중심단어를 예측하는 방식
+ 2. Skip-gram : 중심단어 왼쪽/오른쪽편 단어를 예측하는 방식  
+*Skip-gram 상세 정리 필요  
+
+##### Pre-Trained Word Embedding
+- word2vec
+- glove
+- fastText 
+
+##### W/E Layer 이용한 단어변환
+##### W/E 사용밥법
+
+#### 1-3. Language Model
 
 ### 2. 핵심요소
 
