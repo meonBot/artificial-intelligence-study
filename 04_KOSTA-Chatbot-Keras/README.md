@@ -4,8 +4,10 @@
 - 교육과정(강의 Topic)  
 
 <hr />
+<br>
 
 ## Word Embedding 정리  
+<br>
 
 ### 1. 개념정리
 
@@ -30,15 +32,30 @@
 *Skip-gram 상세 정리 필요  
 
 ##### Pre-Trained Word Embedding
-- word2vec
-- glove
-- fastText 
+- word2vec(google) : 2013,
+- fastText(Facebook) : 2015, skip-gram(n:3 or 6)을 활용해 새로운 단어가 나타나도 단어의 조합으로 분류가능
+- glove(스탠포드) : 2016, 사전에 나타난 단어의 확률에 바탕
 
 ##### W/E Layer 이용한 단어변환
+- 
+
 ##### W/E 사용밥법
+* 충분한 data가 있는 경우 : CBOW, Skip-Gram을 이용해 Embedding 모델을 생성
+* 데이터가 충분히 있지 않거나, 범용 모델로 충분하다면 Pre-Trained된 모델을 다운받아 사용
 
-#### 1-3. Language Model
+<hr />
+<br>
 
-### 2. 핵심요소
 
-### 3. Keras 활
+## Language Model
+<br>
+
+### 개요
+- 정의 : 다음에 나오는 단어가 무엇인지 예측하는 것
+> The Students opened their ________
+> 예측ex: books, laptops, exams ...
+- 최근 가장 유명한 Language Model이 BERT
+
+### 다음 단어 예측하기(예제)
+
+
