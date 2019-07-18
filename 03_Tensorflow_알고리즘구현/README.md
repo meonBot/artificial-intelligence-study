@@ -149,7 +149,9 @@ hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
 2. 이 때, 미분과 Chain Rule을 이용하여 현재 Cost함수 F에 영향을 미치는 W*x와 b에 대하여 국소미분을 하고(F=g+b, g=W*x),  
    구할려고 하는 이전 Layer의 W와 x의 영향도는 df/dx = df/dg * dg/dx의 chain rule로 정의할 수 있는데,  
    g함수의 미분(df/dg)값은 국소미분으로 알고 있는 값이기 때문에, df/dx값도 계산 할 수 있게 된다.  
+![image](https://user-images.githubusercontent.com/45334819/61470015-40a45200-a9bb-11e9-8299-6c9db83ce7e5.png)  
 3. Tensorflow같은 Framework에서는 이를 그래프의 Edge로 구성하여, Cost함수를 최소화 시킬때 내부적으로 미분을 수행하여 W(weigt)값들을 업데이트 해나게기 된다.  
+![image](https://user-images.githubusercontent.com/45334819/61470022-4437d900-a9bb-11e9-9c58-ddd726c552c0.png)  
 - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/09_3_backpropagation_1_linear.ipynb  
 - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/09_4_backpropagation_2_xor_nn.ipynb  
 
