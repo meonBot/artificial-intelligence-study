@@ -9,6 +9,7 @@
 ### 2. Python, Tensorflow 기본  
 #### 2-1. [Python](https://github.com/jukyellow/artificial-intelligence-study/tree/master/02_%ED%8C%8C%EC%9D%B4%EC%8D%AC(Python)-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95)
 #### 2-2. [Tensorflow](https://github.com/jukyellow/artificial-intelligence-study/tree/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84)
+#### 2-3. [Keras]
 
 <br>
 
