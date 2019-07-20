@@ -24,4 +24,13 @@ for word, i in tokenizer.word_index.items():
 
 print(embedding_matrix.shape)
 print(embedding_matrix[10, :])
+
+#make model
+model = keras.Sequential()
+embedding_layer = keras.layers.Embedding(len(tokenizer.word_index) + 1,   #in  dim
+                            EMBEDDING_DIM,                                #out dim
+                            embeddings_initializer='glorot_uniform',      #glorot_uniform: Xavier uniform initializer.
+                            weights=[embedding_matrix],
+                            input_length=200,
+                            trainable=False) # trainable=True > Fine-Tune, True일때 overfitting
 ```
