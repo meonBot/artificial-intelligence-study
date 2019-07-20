@@ -131,7 +131,7 @@ drive = GoogleDrive(gauth)
 
 # 2. Create & upload a file text file.
 # 특정 폴더 안으로 파일 삽입
-uploaded = drive.CreateFile({'title': 'GoodsDesc_Validation_20190629_NEW130.h5'}) #, "parents": [{"kind": "drive#fileLink","id": 'jukyellow@gmail.com'}]})
+uploaded = drive.CreateFile({'title': 'GoodsDesc_Validation_20190629_NEW130.h5'}) #, "parents": [{"kind": "drive#fileLink","id": 'google'}]})
 uploaded.SetContentString('GoodsDesc_Validation_20190629_NEW130')
 uploaded.SetContentFile('GoodsDesc_Validation_20190629_NEW130.h5')
 uploaded.Upload()
