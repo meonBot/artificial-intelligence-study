@@ -9,7 +9,7 @@
 #### 2-1. Gensim 예제
 
 #### 2-2. Gensim & FastText Loading & Visualization
--
+- https://github.com/jukyellow/artificial-intelligence-study/blob/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/02_02_Gensim_FastText_Loading_Visualization.ipynb
 
 ### 3. NLP(자연어 처리) 및 & Pre-Trained Model
 
