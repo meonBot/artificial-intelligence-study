@@ -28,13 +28,20 @@
 - Select and Train a Model(메소드, 알로리즘): 사용할 AI 알고리즘 선택
 #### 4)평가
 - 결과평가(성능측정,비교)
+<br>
 
-### 4. Classification (MNIST dataset)  
-
+### 4. Classification (MNIST dataset)    
+- MNIST dataset (0~9손글씨 7만장 학습)  
+* data: 28X28 행렬에 0/1로 글씨(검정잉크) 존재유무 표시  
+* target(lable): 0~9의 정답을 표시  
+* 6만장 training set, 1만장 test set 
+- Traing: 
+* binary classifier(두 그룹으로 나누는방식)  
+* multinomial classifier(3그룹이상으로 나누는 방식, ex: Softmax Logistic Regression)  
 <br>
 
 ### 5. Performance Measures (Confusion Matrix, Precision & Recall, ROC curve)  
-<br>
+<br>multinomial logistic regression
 
 ### 6. Multiclass Classification
 <br>
