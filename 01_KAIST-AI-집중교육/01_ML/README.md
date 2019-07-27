@@ -3,7 +3,13 @@
 (정리되지않은 노트)https://www.evernote.com/shard/s222/sh/8c3926e3-f8da-487f-9448-f092ca2f213a/ec63fe83701a81cdbf0ca6339283421d  
 
 ### 1. ML 기초(정의, 모델, 히스토리, Tools)  
-<br>
+![image](https://user-images.githubusercontent.com/45334819/61990761-a363b080-b081-11e9-8449-fc4c43e29191.png)  
+- 인공신경망: 사람의 신경구조(뉴런)를 모방하여 모델링한 학습 알고리즘  
+- 입력층의 신호의 총합(시그마 Wx+b)을 F(Activation Function)라는 활성화 함수를 통해 출력층으로 신호를 발산  
+![image](https://user-images.githubusercontent.com/45334819/61990853-06097c00-b083-11e9-917b-a74ae8829b8d.png)  
+- AI > Machine Learning > Representation Learning > Deep Learning
+- https://steemit.com/representation-learning/@hugmanskj/representation-learning  
+
 
 ### 2. Types of Machine Learning Systems (Supervised, Unsupervised, Reinforcement)   
 <br>
