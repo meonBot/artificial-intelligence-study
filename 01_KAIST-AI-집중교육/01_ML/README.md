@@ -41,7 +41,10 @@
 <br>
 
 ### 5. Performance Measures (Confusion Matrix, Precision & Recall, ROC curve)  
-<br>multinomial logistic regression
+![image](https://user-images.githubusercontent.com/45334819/61991355-c5613100-b089-11e9-9bc7-76042743f9e5.png)  
+![image](https://user-images.githubusercontent.com/45334819/61991357-cb571200-b089-11e9-9a51-ab7949bab4a3.png)  
+- 참고:  https://www.waytoliah.com/1222  
+<br>
 
 ### 6. Multiclass Classification
 <br>
