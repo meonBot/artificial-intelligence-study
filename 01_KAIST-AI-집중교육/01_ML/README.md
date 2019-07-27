@@ -16,31 +16,45 @@
 ![image](https://user-images.githubusercontent.com/45334819/61990966-db202780-b084-11e9-98ff-e36130d6a8eb.png)
 <br>
 
-### 3. Classification (MNIST dataset)  
+### 3. End-to-End Machine Learning (머신러닝의 과정)
+#### 1)분석
+- Big Picture
+- Get data
+- Discover,Visualize the data -> <b>Gain Insights</b> : data를 시각적으로 분석하여 필터링할 대상 확인  
+#### 2)전처리(Pre-Processing)
+- prepare data : 공백->유효값 대체, 문자열->숫자 치환 등
+- Feature scaling : 히스토그램 시각화등 -> 평균, 표준화
+#### 3)학습(Training)
+- Select and Train a Model(메소드, 알로리즘): 사용할 AI 알고리즘 선택
+#### 4)평가
+- 결과평가(성능측정,비교)
+
+### 4. Classification (MNIST dataset)  
+
 <br>
 
-### 4. Performance Measures (Confusion Matrix, Precision & Recall, ROC curve)  
+### 5. Performance Measures (Confusion Matrix, Precision & Recall, ROC curve)  
 <br>
 
-### 5. Multiclass Classification
+### 6. Multiclass Classification
 <br>
 
-### 6. Training Models (Linear Regression)
+### 7. Training Models (Linear Regression)
 <br>
 
-### 7. Gradient Descent Method
+### 8. Gradient Descent Method
 <br>
 
-### 8. Regularized Linear Model
+### 9. Regularized Linear Model
 <br>
 
-### 9. Logistic regression
+### 10. Logistic regression
 <br>
 
-### 10. Softmax(Multicalss logistic) regression
+### 11. Softmax(Multicalss logistic) regression
 <br>
 
-### 11. SVN
+### 12. SVN
 <br>
 
 <hr>
