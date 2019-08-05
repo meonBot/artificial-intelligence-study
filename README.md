@@ -13,6 +13,11 @@
 
 <br>
 
-### 3. 실전 Training  
-#### 3-1. [Library(Colab,GoogleDrive,Gensim,Pre-Trained)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib)
+### 3. 논문 Study
+
+<br>
+
+
+### 4. 실전 Training  
+#### 4-1. [Library(Colab,GoogleDrive,Gensim,Pre-Trained)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib)
 
