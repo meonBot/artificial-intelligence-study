@@ -13,7 +13,7 @@
 
 <br>
 
-### 3. 논문 Study
+### 3. [논문 Study](https://github.com/jukyellow/artificial-intelligence-study/tree/master/06_%EB%85%BC%EB%AC%B8_study)  
 
 <br>
 
