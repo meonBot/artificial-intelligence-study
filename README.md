@@ -21,4 +21,8 @@
 ### 4. 실전 Training  
 #### 4-1. [Library(Colab,GoogleDrive,Gensim,Pre-Trained)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib)
 
+<br>
+
 ### 5. [자연어 처리(Natural language processing)](https://github.com/jukyellow/artificial-intelligence-study/blob/master/08_NLP.md)  
+
+
