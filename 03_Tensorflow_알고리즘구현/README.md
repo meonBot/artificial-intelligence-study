@@ -155,3 +155,12 @@ hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
 - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/09_3_backpropagation_1_linear.ipynb  
 - 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/09_4_backpropagation_2_xor_nn.ipynb  
 
+<hr />
+
+ ## 10. (pass)  
+
+<hr />
+
+ ## 12. RNN(Recurrent Neural Network)  
+ 
+ 
