@@ -6,6 +6,9 @@
 - https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/  
 #### 1-2. Attention in Keras  
 - https://towardsdatascience.com/light-on-math-ml-attention-with-keras-dc8dbc1fad39  
+#### 1-3. Attention 레이어를 접목한 핵심어구(단어) 가중치 추출
+- https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/  
+
 
 <br>
 
@@ -17,3 +20,9 @@ spacer = ChatSpace()
 spacer.space("안녕만나서반가워내이름은뽀로로라고해")
 # '안녕 만나서 반가워 내 이름은 뽀로로라고 해'
 ```
+
+<br>
+
+### 3. NLTK(Natural Language Toolkit) 자연어 처리 패키지  
+- https://datascienceschool.net/view-notebook/118731eec74b4ad3bdd2f89bab077e1b/  
+
