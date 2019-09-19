@@ -6,8 +6,11 @@
 - https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/  
 #### 1-2. Attention in Keras  
 - https://towardsdatascience.com/light-on-math-ml-attention-with-keras-dc8dbc1fad39  
-#### 1-3. Attention 레이어를 접목한 핵심어구(단어) 가중치 추출
-- https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/  
+#### 1-3. Attention 레이어를 접목한 핵심어구(단어) 가중치 추출  
+- 논문리뷰1: https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/    
+- 논문리뷰2: https://jsideas.net/name_classifier/  
+- 논문원문(A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING): https://openreview.net/pdf?id=BJC_jUqxe  
+- 구현체: https://github.com/ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding  
 
 
 <br>
