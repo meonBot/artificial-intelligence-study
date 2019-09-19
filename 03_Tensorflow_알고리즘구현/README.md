@@ -163,4 +163,13 @@ hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
 
  ## 12. RNN(Recurrent Neural Network)  
  
+ ### 12-0) RNN기본
+-RNN(순환신경망): 순서가 존재하는 시계열 DATA의 학습과 Predict에 특화   
+![image](https://user-images.githubusercontent.com/45334819/65284024-698bc380-db73-11e9-8348-b0b31a2c176b.png)  
+- 현재 입력x와 이전 입력상태(H: Hidden State)를 입력으로 받아서, 현재 상태가 이전상태에 영향을 받게 되는 recursive한 구조   
+![image](https://user-images.githubusercontent.com/45334819/65284032-6e507780-db73-11e9-9f60-959a5b5f4700.png)  
+- H함수는 현재입력x와 이전입력 Hx-1의 내적?으로 Activation함수를 통과함(Tanh(하이퍼블릭 탄젠트): -1~1)  
+![image](https://user-images.githubusercontent.com/45334819/65284097-963fdb00-db73-11e9-99eb-53d3d3250170.png)  
+
+ 
  
