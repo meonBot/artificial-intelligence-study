@@ -172,6 +172,8 @@ hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
 ![image](https://user-images.githubusercontent.com/45334819/65284097-963fdb00-db73-11e9-99eb-53d3d3250170.png)  
 
 ### 12-1) RNN Cell 구성
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/12_1_RNN_Hello.ipynb  
+
 ![image](https://user-images.githubusercontent.com/45334819/65285260-e7050300-db76-11e9-877e-b23b6cd51c00.png)
 -크게 2개의 cell로 구성(입력 cell, 출력 cell): 이렇게 하면 입력cell(모델)을 쉽게 변경해가면서 테스트해볼수 있음  
 ![image](https://user-images.githubusercontent.com/45334819/65285270-ec624d80-db76-11e9-8490-d5327ccfbf86.png)
