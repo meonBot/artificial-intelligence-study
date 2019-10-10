@@ -182,6 +182,16 @@ hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
 - Shape(1,5,4)에서 5가 Sequence_length로 한번에 입력하는 문자 수  
 ![image](https://user-images.githubusercontent.com/45334819/65285277-f2f0c500-db76-11e9-85a9-7c7f67d328b6.png)
 - Shape(3,5,4)에서 3이 Batch_size로 한번에 입력하는 문자열수(입력쌍의 갯수)  
+![image](https://user-images.githubusercontent.com/45334819/66246900-0b560780-e753-11e9-8b1d-31013355ab8f.png)  
+- dynamic_rnn의 sequence_length=[1, 3, 2] 설정 : padding 문자 처리하는 기능과 유사  
+
+### 12-2) char-seq-rnn
+- 예제1(tensorflow): https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/12_2_char_seq_rnn.ipynb  
+- 설명: char 문자열을 predict하는 간단 예제
+ - 입출력값: "if you want you"에서 입력x(if..you), 출력y(다음문자 f..you)로 주고 학습수행  
+ - 모델: BasicLSTMCell + dynamic_rnn + fully_connected(성능향상) + sequence_loss + AdamOptimizer  
+ 
+- 예제2(keras):  
 
 
 
