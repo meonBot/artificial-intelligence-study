@@ -189,9 +189,15 @@ hypothesis = tf.sigmoid(tf.matmul(layer1, W2) + b2)
 - 예제1(tensorflow): https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/12_2_char_seq_rnn.ipynb  
 - 설명: char 문자열을 predict하는 간단 예제
  - 입출력값: "if you want you"에서 입력x(if..you), 출력y(다음문자 f..you)로 주고 학습수행  
- - 모델: BasicLSTMCell + dynamic_rnn + fully_connected(성능향상) + sequence_loss + AdamOptimizer  
+ - 모델: BasicLSTMCell + dynamic_rnn + fully_connected(성능향상, matmul) + sequence_loss + AdamOptimizer  
  
-- 예제2(keras):  
+- 예제2(keras): https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/12_1_keras_hello_rnn.py  
+- 설명: hihell->ihello 처럼 다음 단어를 예측하는 예제  
+- 모델: keras LSTM(wide and deep) + dense(fully_connected) + loss function  
+
+### 12-3) rnn-long-char  
+- 예제: https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/12_3_rnn_long_char.py  
+- 설명: MultiRNNCell을 사용하여 tensorflow에서 layer를 deep하게 구성   
 
 
 
