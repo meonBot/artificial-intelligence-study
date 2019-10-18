@@ -30,6 +30,6 @@ spacer.space("안녕만나서반가워내이름은뽀로로라고해")
 
 <br>
 
-### 3. NLTK(Natural Language Toolkit) 자연어 처리 패키지  
+### 4. NLTK(Natural Language Toolkit) 자연어 처리 패키지  
 - https://datascienceschool.net/view-notebook/118731eec74b4ad3bdd2f89bab077e1b/  
 
