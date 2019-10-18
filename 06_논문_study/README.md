@@ -14,8 +14,7 @@
 
 <br>
 
-### 2. [A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING](
-)  
+### 2. [A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING](https://github.com/jukyellow/artificial-intelligence-study/tree/master/06_%EB%85%BC%EB%AC%B8_study)  
 
 
 <br>
