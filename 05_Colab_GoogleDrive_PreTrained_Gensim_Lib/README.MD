@@ -18,4 +18,11 @@
 #### 3-1-1. Glove
 - https://github.com/jukyellow/artificial-intelligence-study/blob/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/03_01_Glove_Loading_Gen_Weights.md
 
-#### 3-1-2. FastText
+#### 3-1-2. FastText  
+
+
+### 4. Google Colab & Github 소스연동(.py파일 로딩 및 호출) 방법
+- https://github.com/jukyellow/artificial-intelligence-study/blob/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/04_colab_github_clone_use.py  
+
+
+
