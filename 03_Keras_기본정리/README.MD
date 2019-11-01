@@ -15,8 +15,9 @@
 5. RepeatVector : Repeats the input n times.  
 - model.add(RepeatVector(3))  
 - ex: model.output_shape == (None, 3, 32)  
-6. concatenate(merge)  
+6. tensorflow merge = keras Multifly() --concatenate(merge)  
 - Merge all available features into a single large vector via concatenation  
+- ex) attention_mul = multiply([inputs, attention_probs], name='attention_mul')  
 7. Flatten : 입력vector를 일차원으로 바꿈  
   
   
