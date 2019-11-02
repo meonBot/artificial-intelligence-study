@@ -8,22 +8,23 @@
 ### 2. Attention
 - https://github.com/jukyellow/artificial-intelligence-study/tree/master/06_%EB%85%BC%EB%AC%B8_study/02_attention-mechanism
 
-#### 1-1. Attention  
+#### 2-1. Attention  
 - https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/  
-#### 1-2. Attention in Keras  
+#### 2-2. Attention in Keras  
 - https://towardsdatascience.com/light-on-math-ml-attention-with-keras-dc8dbc1fad39  
-#### 1-3. Attention 레이어를 접목한 핵심어구(단어) 가중치 추출  
-- 논문리뷰1: https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/    
-- 논문리뷰2: https://jsideas.net/name_classifier/  
-- 논문원문(A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING): https://openreview.net/pdf?id=BJC_jUqxe  
-- 구현체: https://github.com/ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding  
-### 1-4. Transformer & Attetion
+#### 2-3. Transformer & Attetion
 - http://jalammar.github.io/illustrated-transformer/  
 
 
 <br>
 
 ### 3. [A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING](https://github.com/jukyellow/artificial-intelligence-study/blob/master/06_%EB%85%BC%EB%AC%B8_study/2_A%20STRUCTURED%20SELF-ATTENTIVE%20SENTENCE%20EMBEDDING.md)  
+
+### 3-1. Attention 레이어를 접목한 핵심어구(단어) 가중치 추출  
+- 논문리뷰1: https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/    
+- 논문리뷰2: https://jsideas.net/name_classifier/  
+- 논문원문(A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING): https://openreview.net/pdf?id=BJC_jUqxe  
+- 구현체: https://github.com/ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding  
 
 
 <br>
