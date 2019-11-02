@@ -1,7 +1,13 @@
 # Paper Stduy
 
-### 1. Transformer & Attetion
-- http://jalammar.github.io/illustrated-transformer/  
+### 1. Seq2Seq
+- https://github.com/jukyellow/artificial-intelligence-study/tree/master/06_%EB%85%BC%EB%AC%B8_study/01_seq2seq
+
+<br>
+
+### 2. Attention
+- https://github.com/jukyellow/artificial-intelligence-study/tree/master/06_%EB%85%BC%EB%AC%B8_study/02_attention-mechanism
+
 #### 1-1. Attention  
 - https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/  
 #### 1-2. Attention in Keras  
@@ -11,15 +17,18 @@
 - 논문리뷰2: https://jsideas.net/name_classifier/  
 - 논문원문(A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING): https://openreview.net/pdf?id=BJC_jUqxe  
 - 구현체: https://github.com/ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding  
-
-<br>
-
-### 2. [A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING](https://github.com/jukyellow/artificial-intelligence-study/blob/master/06_%EB%85%BC%EB%AC%B8_study/2_A%20STRUCTURED%20SELF-ATTENTIVE%20SENTENCE%20EMBEDDING.md)  
+### 1-4. Transformer & Attetion
+- http://jalammar.github.io/illustrated-transformer/  
 
 
 <br>
 
-### 3. [대화체 유연한 띄어쓰기 모델](https://github.com/jukyellow/artificial-intelligence-study/blob/master/06_%EB%85%BC%EB%AC%B8_study/2_%EB%8C%80%ED%99%94%EC%B2%B4%20%EC%9C%A0%EC%97%B0%ED%95%9C%20%EB%9D%84%EC%96%B4%EC%93%B0%EA%B8%B0%20%EB%AA%A8%EB%8D%B8.md)
+### 3. [A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING](https://github.com/jukyellow/artificial-intelligence-study/blob/master/06_%EB%85%BC%EB%AC%B8_study/2_A%20STRUCTURED%20SELF-ATTENTIVE%20SENTENCE%20EMBEDDING.md)  
+
+
+<br>
+
+### 4. [대화체 유연한 띄어쓰기 모델](https://github.com/jukyellow/artificial-intelligence-study/blob/master/06_%EB%85%BC%EB%AC%B8_study/2_%EB%8C%80%ED%99%94%EC%B2%B4%20%EC%9C%A0%EC%97%B0%ED%95%9C%20%EB%9D%84%EC%96%B4%EC%93%B0%EA%B8%B0%20%EB%AA%A8%EB%8D%B8.md)
 ```python
 pip install chatspace
 from chatspace import ChatSpace
@@ -30,6 +39,6 @@ spacer.space("안녕만나서반가워내이름은뽀로로라고해")
 
 <br>
 
-### 4. NLTK(Natural Language Toolkit) 자연어 처리 패키지  
+### 5. NLTK(Natural Language Toolkit) 자연어 처리 패키지  
 - https://datascienceschool.net/view-notebook/118731eec74b4ad3bdd2f89bab077e1b/  
 
