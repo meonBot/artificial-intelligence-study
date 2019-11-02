@@ -20,7 +20,7 @@
 
 ### 3. [A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING](https://github.com/jukyellow/artificial-intelligence-study/blob/master/06_%EB%85%BC%EB%AC%B8_study/2_A%20STRUCTURED%20SELF-ATTENTIVE%20SENTENCE%20EMBEDDING.md)  
 
-### 3-1. Attention 레이어를 접목한 핵심어구(단어) 가중치 추출  
+#### 3-1. Attention 레이어를 접목한 핵심어구(단어) 가중치 추출  
 - 논문리뷰1: https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/    
 - 논문리뷰2: https://jsideas.net/name_classifier/  
 - 논문원문(A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING): https://openreview.net/pdf?id=BJC_jUqxe  
