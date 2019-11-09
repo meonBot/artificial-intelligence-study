@@ -2,7 +2,15 @@
 
 ### 참고1. 밑바닥부터 시작하는 딥러닝
  - 기본문법(변수,연산,함수,클래스,라이브러리 로딩, 그래프 등)  
- https://www.evernote.com/shard/s222/sh/cbdefc88-41d7-4b88-b718-aaf9659262c0/15f336ad07be694497a3c586a0ed14cc  
+ https://www.evernote.com/shard/s222/sh/cbdefc88-41d7-4b88-b718-aaf9659262c0/15f336ad07be694497a3c586a0ed14cc 
+ 
+ - squeeze : 차원축소  
+ https://www.evernote.com/shard/s222/sh/43636d07-ca5b-4a18-93e9-6574e5032046/93b5d84a57ceb3258516c410a58cd0e1  
+ 
+ - argmax/axis : 차원별 최대값의 index  
+ https://www.evernote.com/shard/s222/sh/11ed9209-4b4f-4c89-a083-05ac94f1a45a/202d75ccc343ca82fb96ef1b6c2dd97f  
+ 
+ 
 
 <hr />
 
