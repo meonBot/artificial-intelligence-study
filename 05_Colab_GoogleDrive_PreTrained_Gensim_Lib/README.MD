@@ -25,4 +25,5 @@
 - https://github.com/jukyellow/artificial-intelligence-study/blob/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/04_colab_github_clone_use.py  
 
 
+### 5. Model, Weights 로딩 및 Unknown Layer(사용자정의 클래스) 해결방법
 
