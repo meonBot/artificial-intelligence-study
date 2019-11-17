@@ -1,8 +1,11 @@
-# 모델 및 weight 저장/로딩 및 Unkown Layer(사용자정의 클래스) 해결방법
+## 모델 및 weight 저장/로딩 및 Unkown Layer(사용자정의 클래스) 해결방법
 
 ### 1. Model, Weight Save
 #### 1-1. weight save
 ```
+import os
+from keras.callbacks import ModelCheckpoint
+
 if not os.path.exists('./weights'):
     os.makedirs('./weights/')
 
