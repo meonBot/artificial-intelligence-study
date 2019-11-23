@@ -10,6 +10,10 @@
  - argmax/axis : 차원별 최대값의 index  
  https://www.evernote.com/shard/s222/sh/11ed9209-4b4f-4c89-a083-05ac94f1a45a/202d75ccc343ca82fb96ef1b6c2dd97f  
  
+ - key/value 집합(dictional) 소팅
+ https://www.evernote.com/shard/s222/sh/a6aa8211-6e2b-4b7b-a69f-9e85e63381c4/4b9755151f266156034026e077d7e314  
+ 
+ 
  
 
 <hr />
