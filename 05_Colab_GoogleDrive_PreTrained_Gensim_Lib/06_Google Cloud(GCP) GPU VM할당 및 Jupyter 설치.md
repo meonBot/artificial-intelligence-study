@@ -1,7 +1,7 @@
 # 06_Google Cloud(GCP) GPU VM할당 및 Jupyter 설치.md
 
 <br>
-- 참고: https://jeinalog.tistory.com/entry/GCP-%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%84-%EC%9C%84%ED%95%9C-VM-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B5%AC%EC%84%B1-feat-GPU
+- 참고: https://jeinalog.tistory.com/entry/GCP-%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%84-%EC%9C%84%ED%95%9C-VM-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B5%AC%EC%84%B1-feat-GPU  
 
 *** 2019년11월말 현재 모든 gpu가 초과사용상태이므로, Virtual GPU를 할당받아 사용하도록 함.   
 *** OS는 우분투 16.04, 아나콘다는 설치하지 않음   
