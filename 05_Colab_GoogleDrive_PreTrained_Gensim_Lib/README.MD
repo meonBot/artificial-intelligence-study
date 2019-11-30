@@ -30,10 +30,9 @@
   
 
 ### 6. Google Cloud(GCP) GPU VM할당 및 Jupyter 설치
-- gpu limit가 전세계적으로? 초과되어서 virtual gpu로 신청하면 가능
-- https://www.evernote.com/Home.action#n=75fd6b5c-6417-4f74-880b-41f303888d4a&s=s222&ses=4&sh=2&sds=5&    
+- gpu limit가 전세계적으로? 초과되어서 virtual gpu로 신청하면 가능  
 - 64G(16*4, P100모델) 할당!(300 무로 크레딧으로 5일정도 사용가능)  
-![image](https://user-images.githubusercontent.com/45334819/69897080-f8923480-1389-11ea-9ae2-fd6032cfb7ed.png)  
+https://github.com/jukyellow/artificial-intelligence-study/blob/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/06_Google%20Cloud(GCP)%20GPU%20VM%ED%95%A0%EB%8B%B9%20%EB%B0%8F%20Jupyter%20%EC%84%A4%EC%B9%98.md 
 
 
 
