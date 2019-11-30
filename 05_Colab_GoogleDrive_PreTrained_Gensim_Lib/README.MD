@@ -28,3 +28,6 @@
 ### 5. Model, Weights 저장/로딩 및 Unknown Layer(사용자정의 클래스) 해결방법
 - https://github.com/jukyellow/artificial-intelligence-study/blob/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/05_model_weights_save_load.md
   
+
+### 6. Google Cloud(GCP) GPU VM할당 및 Jupyter 설치
+- https://www.evernote.com/Home.action#n=75fd6b5c-6417-4f74-880b-41f303888d4a&s=s222&ses=4&sh=2&sds=5&  
