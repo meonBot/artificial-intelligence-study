@@ -26,4 +26,27 @@
 
 <hr />
 
-기타: 파일입출력, 문자열, 크롤링, 웹application(장고?)
+### 기타: 파일입출력, 문자열, 크롤링, 웹application(장고?)
+
+#### 1. pickle을 이용한 dictionary 저장/로딩
+```
+import pickle
+
+dic = {}
+dic["word"] = ['a', 'b', 'c']
+dic["weight"] = ['1.1', '2.5', '0.1']
+dic["hs"] = ['1234', '5678', '0001']
+
+print(dic)
+>> {'word': ['a', 'b', 'c'], 'weight': ['1.1', '2.5', '0.1'], 'hs': ['1234', '5678', '0001']}
+
+file_name='dic_test.pickle'
+with open(file_name, 'wb') as w_handler:
+    pickle.dump(dic, w_handler, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open(file_name, 'rb') as r_handler:
+    l_dic = pickle.load(r_handler)
+
+print('loaded_dic:', l_dic)      
+>> loaded_dic: {'word': ['a', 'b', 'c'], 'weight': ['1.1', '2.5', '0.1'], 'hs': ['1234', '5678', '0001']}
+```
