@@ -5,7 +5,7 @@
 
 *** 2019년11월말 현재 모든 gpu가 초과사용상태이므로, Virtual GPU를 할당받아 사용하도록 함.   
 *** OS는 우분투 16.04, 아나콘다는 설치하지 않음   
-*** GPU사용을 위해서는 가상환경으로 구동되어야함   
+*** GCP GPU 할당을 위해서는 가상환경으로 자원요청해야함! 
 ![image](https://user-images.githubusercontent.com/45334819/69904807-94ee2280-13ee-11ea-81c1-53413f489cd6.png)  
 
 <br>
