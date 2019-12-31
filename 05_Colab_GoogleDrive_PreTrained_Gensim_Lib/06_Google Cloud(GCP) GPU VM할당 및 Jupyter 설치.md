@@ -20,9 +20,9 @@ sudo apt-get install python3-pip -y
 pip3 install --upgrade pip
 ```
 
-- python 3.6으로 올리기(jupyter 오류발생으로)
---참고: https://unipro.tistory.com/237
---Ubuntu 16.04에는 써드파티 PPA를 추가해야 python 3.6을 설치할 수 있다.
+- python 3.6으로 올리기(jupyter 오류발생으로)  
+--참고: https://unipro.tistory.com/237  
+--Ubuntu 16.04에는 써드파티 PPA를 추가해야 python 3.6을 설치할 수 있다.  
 ```
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
