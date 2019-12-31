@@ -10,50 +10,44 @@
 
 <br>
 
-## 설치  
+## 설치  (OS: Ubuntu 16.04 기준)
 
 #### 1.패키지 설치
 - pip3
 ```
 sudo apt-get update
 sudo apt-get install python3-pip -y
+pip3 install --upgrade pip
 ```
 
-#### 2.CUDA 설치
-- 아래 명령어로 먼저 설치파일을 다운받아주세요.
-```
-curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
-sudo dpkg -i ./cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
-sudo apt-get update
-sudo apt-get install cuda-9-0
-```
-- 확인: nvidia-smi
-
-### 3.cuDNN 설치
-- 역시 먼저 아래 명령어로 설치파일을 다운받습니다.
-```
-sudo sh -c 'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /" >> /etc/apt/sources.list.d/cuda.list'
-sudo apt-get update
-sudo apt-get install libcudnn7-dev
-```
-#### 4. 기타 라이브러리 설치
-- pip3 버전확인
-```
-pip3 --version
->pip 8.1.1 from /usr/lib/python3/dist-packages (python 3.5)
-```
 - python 3.6으로 올리기(jupyter 오류발생으로)
-- https://unipro.tistory.com/237
-- Ubuntu 16.04에는 써드파티 PPA를 추가해야 python 3.6을 설치할 수 있다.
+--참고: https://unipro.tistory.com/237
+--Ubuntu 16.04에는 써드파티 PPA를 추가해야 python 3.6을 설치할 수 있다.
 ```
-sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install python3.6
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+>확인 python3 -V  //3.5.2->3.6.8로 바뀌어있음
 ```
-- 확인 python3 -V  //3.5.2->3.6.8로 바뀌어있음
 
-#### 5. 가상환경 설치 
+#### 2.CUDA/cuDNN 설치(Cuda ver 10.2)
+```
+wget https://raw.githubusercontent.com/jukyellow/gcp-ubuntu-gpu/master/gcp_cuda_10.sh
+bash gcp_cuda_10.sh
+>gpu설정관련 레퍼런스: https://www.tensorflow.org/install/gpu#pip_package
+```
+- 확인: nvidia-smi
+
+#### 3. 가상 워크스테이션용 GRID® 드라이버 설치
+--https://cloud.google.com/compute/docs/gpus/add-gpus#install-driver-script
+```
+curl -O https://storage.googleapis.com/nvidia-drivers-us-public/nvidia-cos-project/77/tesla/440_00/440.33.01/NVIDIA-Linux-x86_64-440.33.01_77-12371-114-0.cos
+sudo bash NVIDIA-Linux-x86_64-440.33.01_77-12371-114-0.cos
+> 버전 맞춰서 다운로드 받고 설치
+```
+
+#### 4. 가상환경 설치 
 *** gpu사용을 위한 가상환경 추가
 - 가상환경 유틸 설치
 ```
@@ -64,7 +58,11 @@ virtualenv keras_gpu --python=python3.6
 - 가상환경 사용
 source keras_gpu/bin/activate
 python -m ipykernel install --user --name keras_gpu
+```
+
+#### 5. 기타 라이브러리 설치
 - 가상환경에서 keras등 설치하고 실행
+```
 pip3 install tensorflow-gpu keras //torch torchvision
 pip3 install jupyter sklearn pandas //matplotlib seaborn (설치오류는 일단 두개는 제외)
 ```
