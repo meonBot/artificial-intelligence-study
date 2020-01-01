@@ -34,7 +34,15 @@
 - 64G(16*4, P100모델) 할당!(300 무로 크레딧으로 5일정도 사용가능)  
 https://github.com/jukyellow/artificial-intelligence-study/blob/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/06_Google%20Cloud(GCP)%20GPU%20VM%ED%95%A0%EB%8B%B9%20%EB%B0%8F%20Jupyter%20%EC%84%A4%EC%B9%98.md 
 
-
-
+### 7. Google Colab, Timeout 없이 12시간 연속사용하기
+![image](https://user-images.githubusercontent.com/45334819/71640035-1e329680-2cc6-11ea-8ed7-507c197cde71.png)
+- Ctrl+Shift+i (개발자환경F12?)열고 console tab에 아래 스크립트 추가 : 60초마다 refresh되어 timeout 발생안함  
+```
+function ClickConnect(){
+  console.log("Working"); 
+  document.querySelector("colab-toolbar-button#connect").click() 
+}
+setInterval(ClickConnect,60000)
+```
 
 
