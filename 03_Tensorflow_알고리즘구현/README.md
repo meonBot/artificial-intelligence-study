@@ -48,6 +48,7 @@ for fn in uploaded.keys():
 - 선형함수(wX+b)에서 예외적인 학습data(튀는값)이 발생할때 오차가 커지는 문제를 개선하기위해,  
   Activation(활성화) 함수로 sigmoid함수를 사용해서 0~1로 수렴하는 H(x)가설(hypothesis)를 찾아낸다.  
 - <b>이때, Cost함수는 local-minimum이 발생할수 있는데, -Log를 취해서 global-minimum을 찾아갈수 있도록 했다.  </b>
+> -log함수를 취하는 이유: https://medium.com/@peteryun/ml-%EB%AA%A8%EB%91%90%EB%A5%BC-%EC%9C%84%ED%95%9C-tensorflow-7-logistic-classification%EC%9D%98-cost-%ED%95%A8%EC%88%98-cc19d111af24  
 ![image](https://user-images.githubusercontent.com/45334819/58574443-f1735800-827a-11e9-9e1b-6a9837355a7a.png) 
 - tensorflow 소스에서는 수식그대로 구현하면 됨.  
 <pre>
