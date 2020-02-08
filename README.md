@@ -25,6 +25,6 @@
 <br>
 
 ### 5. 자연어 처리(Natural language processing)
-#### 5-1. [Data정제](https://github.com/jukyellow/artificial-intelligence-study/tree/master/08_NLP)  
+#### 5-1. [전처리](https://github.com/jukyellow/artificial-intelligence-study/tree/master/08_NLP)  
 
 <br>
