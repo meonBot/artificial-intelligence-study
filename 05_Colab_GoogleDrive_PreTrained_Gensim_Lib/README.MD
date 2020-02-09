@@ -45,4 +45,9 @@ function ClickConnect(){
 setInterval(ClickConnect,60000)
 ```
 
+### 8. Colab Pro (Colab 유로버전)
+- jupyter notebook만 사용하는경우, GCP 서버 설치할 필요없이, 유로버전으로 싼가격으로 빠르게 작업가능!
+![image](https://user-images.githubusercontent.com/45334819/74098945-551b8800-4b61-11ea-9ff6-bbb56ae525a1.png)
+![image](https://user-images.githubusercontent.com/45334819/74098948-59e03c00-4b61-11ea-80b5-7a8222d3935f.png)
+![image](https://user-images.githubusercontent.com/45334819/74098949-5e0c5980-4b61-11ea-9d21-c8b5ee738058.png)
 
