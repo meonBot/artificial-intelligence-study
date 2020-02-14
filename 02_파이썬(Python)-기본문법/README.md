@@ -26,7 +26,6 @@
 
 <hr />
 
-### 기타: 파일입출력, 문자열, 크롤링, 웹application(장고?)
 
 #### 1. pickle을 이용한 dictionary 저장/로딩
 ```
