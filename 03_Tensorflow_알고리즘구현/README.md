@@ -99,6 +99,10 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
   - 개선방법2 > <b>Weight 값 초기화( ex: Xavier Initializer, He initializer 등)</b>  
   - 개선방법3 > dropout  
 
+### Vanishing Gradient(기술기가 사라지는 문제) 해결방안: active함수(Sigmoid->Relu)
+![image](https://user-images.githubusercontent.com/45334819/74583734-871f6500-500d-11ea-9aeb-7b66e44ac833.png)
+![image](https://user-images.githubusercontent.com/45334819/74583747-97cfdb00-500d-11ea-9eaa-883c23718698.png)
+
 <hr />
 
 ## 8. Tensor manipulation  
