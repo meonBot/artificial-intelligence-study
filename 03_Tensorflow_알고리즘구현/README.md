@@ -25,7 +25,11 @@
 > ex:  
 > train = tf.train.GradientDescentOptimizer(learning_rate=0.1).minimize(cost)  
 - 소스예제 : https://github.com/jukyellow/artificial-intelligence-study/blob/master/03_Tensorflow_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B5%AC%ED%98%84/04_3_linear_regression_tf_GradientDescentOptimizer.ipynb  
-![image](https://user-images.githubusercontent.com/45334819/58370213-e056de00-7f3e-11e9-9528-6ff0f80bb500.png)  
+![image](https://user-images.githubusercontent.com/45334819/58370213-e056de00-7f3e-11e9-9528-6ff0f80bb500.png) 
+
+- Optimizer: Cost함수(결과값과 예측값의 차이)가 최소화가 되도록 Weight/Bias값을 update할때, 기울기가 작아지는 방향으로 반복적으로 조금씩 학습data를 사용하도록 하는 최적화 알고리즘?  
+![image](https://user-images.githubusercontent.com/45334819/74584947-f64f8600-501a-11ea-921b-50c1b27abf72.png)
+- Optimizer 알고리즘별 특징: http://shuuki4.github.io/deep%20learning/2016/05/20/Gradient-Descent-Algorithm-Overview.html
 <hr />
 
 ## 4. Matrix(행렬) 연산  
