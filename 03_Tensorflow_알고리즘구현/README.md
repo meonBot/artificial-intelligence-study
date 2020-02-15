@@ -28,7 +28,8 @@
 ![image](https://user-images.githubusercontent.com/45334819/58370213-e056de00-7f3e-11e9-9528-6ff0f80bb500.png) 
 
 - Optimizer: Cost함수(결과값과 예측값의 차이)가 최소화가 되도록 Weight/Bias값을 update할때, 어떤 방향(기울기가 작아지는)으로 움직일지, 한번에 얼마나 학습할지를 결정하는 최적화 알고리즘
-![image](https://user-images.githubusercontent.com/45334819/74585533-cc00c700-5020-11ea-94c2-64b90fdb4d21.png)  
+![image](https://user-images.githubusercontent.com/45334819/74585533-cc00c700-5020-11ea-94c2-64b90fdb4d21.png)
+> 출처: https://gomguard.tistory.com/187  
 ![image](https://user-images.githubusercontent.com/45334819/74585442-15044b80-5020-11ea-9a0c-03d5e404a7cf.png)
 > 출처: https://seamless.tistory.com/38  
 - Optimizer 알고리즘별 특징: http://shuuki4.github.io/deep%20learning/2016/05/20/Gradient-Descent-Algorithm-Overview.html  
