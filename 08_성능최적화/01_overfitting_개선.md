@@ -1,6 +1,6 @@
 # 오버피팅(과적합) 문제 해결방안
 
-- 해결방안:  regularizaiton(3가지), early-stop, droup-out 동시적용
+- 해결방안:  regularizaiton(3가지), early-stop, droup-out 
 
 ### 1. regularizaiton
 
