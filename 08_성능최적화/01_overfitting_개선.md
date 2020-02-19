@@ -2,9 +2,9 @@
 
 - 해결방안:  regularizaiton(3가지), early-stop, droup-out 
 
-### 1. regularizaiton
+## 1. regularizaiton
 
-#### 1-1. 일반 Layer
+### 1-1. 일반 Layer
 - https://keras.io/ko/layers/core/ : 주로 kernel_initializer, bias_initializer 사용  
 > kernel_initializer: kernel 가중치 행렬의 초기값 설정기 (초기값 설정기를 참조하십시오).  
 > bias_initializer: 편향 벡터의 초기값 설정기 (초기값 설정기를 참조하십시오).  
@@ -17,7 +17,7 @@ model.add(keras.layers.Dense(1024 ,activation="relu" , kernel_regularizer=regula
 >다시 말하자면 L1 Norm 은 Feature selection 이 가능하고 이런 특징이 L1 Regularization 에 동일하게 적용 될 수 있는 것입니다.   
 >이러한 특징 때문에 L1 은 Sparse model(coding) 에 적합합니다. L1 Norm 의 이러한 특징 때문에 convex optimization 에 유용하게 쓰인다고 합니다.  
 
-#### 1-2. Embedding Layer
+### 1-2. Embedding Layer
 - embeddings_regularizer=regularizers.l2(0.001)
 ```
 embedding_layer = keras.layers.Embedding(len(gd_data.input_vocap.tokenizer.word_index) + 1,   #in  dim
@@ -28,10 +28,11 @@ embedding_layer = keras.layers.Embedding(len(gd_data.input_vocap.tokenizer.word_
                             input_length=MAX_PADDING,
                             trainable=True) # trainable=True
 ```
+<br>
 
-### 2. early-stop
+## 2. early-stop
 
-#### 2-1. model.fit 함수에 적용
+### 2-1. model.fit 함수에 적용
 ```
 model.compile(optimizer='adam',
               loss='categorical_crossentropy',  #loss='binary_crossentropy', sparse_categorical_crossentropy, categorical_crossentropy
@@ -50,7 +51,7 @@ history = model.fit(gd_data.x_train_data, #gd_data.inputs_tr, dd
                     ,callbacks=[early_stopping])
 ````
 
-#### 2.2 ModelCheckpoint + fit_generator에 적용
+### 2.2 ModelCheckpoint + fit_generator에 적용
 ```
 cp = ModelCheckpoint("./weights/NMT.{epoch:02d}-{val_loss:.2f}.hdf5",
                      monitor='val_loss',
@@ -73,8 +74,9 @@ try: model.fit_generator(generator=gd_data.generator(BAT_SIZE_TEMP, 'TR'),
                         verbose=1,
                         epochs=5) 
 ```
+<br>
 
-### 3. drop-out
+## 3. drop-out
 ```
 from keras.layers import Dropout
 model.add(keras.layers.Dense(1024 ,activation="relu" ))
