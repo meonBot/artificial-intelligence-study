@@ -51,3 +51,5 @@ setInterval(ClickConnect,60000)
 ![image](https://user-images.githubusercontent.com/45334819/74098948-59e03c00-4b61-11ea-80b5-7a8222d3935f.png)
 ![image](https://user-images.githubusercontent.com/45334819/74098949-5e0c5980-4b61-11ea-9d21-c8b5ee738058.png)
 
+### 9. Colab Download File-Size occurs error
+![image](https://user-images.githubusercontent.com/45334819/74835457-bfea7180-5360-11ea-8ad1-4d3b7f8d06d4.png)  
