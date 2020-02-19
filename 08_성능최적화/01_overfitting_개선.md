@@ -6,10 +6,11 @@
 
 #### 1-1. 일반 Layer
 - https://keras.io/ko/layers/core/ : 주로 kernel_initializer, bias_initializer 사용  
+> kernel_initializer: kernel 가중치 행렬의 초기값 설정기 (초기값 설정기를 참조하십시오).  
+> bias_initializer: 편향 벡터의 초기값 설정기 (초기값 설정기를 참조하십시오).  
+> kernel_regularizer: kernel 가중치 행렬에 적용되는 정규화 함수 (정규화를 참조하십시오).  
 ```
-kernel_initializer: kernel 가중치 행렬의 초기값 설정기 (초기값 설정기를 참조하십시오).
-bias_initializer: 편향 벡터의 초기값 설정기 (초기값 설정기를 참조하십시오).
-kernel_regularizer: kernel 가중치 행렬에 적용되는 정규화 함수 (정규화를 참조하십시오).
+model.add(keras.layers.Dense(1024 ,activation="relu" , kernel_regularizer=regularizers.l2(0.002), bias_regularizer= regularizers.l2(0.002)))
 ```
 - https://light-tree.tistory.com/125 : L1, L2 regulirization 비교  
 >L1 Norm 은 파란색 선 대신 빨간색 선을 사용하여 특정 Feature 를 0으로 처리하는 것이 가능하다고 이해할 수 있습니다.   
