@@ -28,6 +28,28 @@ embedding_layer = keras.layers.Embedding(len(gd_data.input_vocap.tokenizer.word_
                             input_length=MAX_PADDING,
                             trainable=True) # trainable=True
 ```
+### 1-3. RNN Layer
+```
+rnn_encoded = Bidirectional(CuDNNLSTM(encoder_units, return_sequences=True), #encoder_units
+     name='bidirectional_1',
+     merge_mode='concat',
+     kernel_initializer='glorot_uniform',
+     kernel_regularizer=regularizers.l2(0.001),
+     trainable=trainable)(input_embed)
+```
+### 1-4. Attention Layer
+```
+ y_hat = AttentionDecoder(decoder_units,
+                             name='attention_decoder_1',
+                             output_dim=n_labels,
+                             return_probabilities=return_probabilities,
+                             trainable=trainable,
+                             kernel_regularizer=regularizers.l2(0.001) # 90/68
+                             #bias_regularizer=regularizers.l2(0.001)  # 89/68
+                             #activation='relu'
+                             )(rnn_encoded) #(rnn_encoded)
+```
+
 <br>
 
 ## 2. early-stop
