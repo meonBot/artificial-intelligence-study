@@ -18,7 +18,5 @@ model.compile(optimizer='adam',
 
 - one-hot-encoding shape 맞출때(3차원->2차원) 적용방안
 ```
-.. 3차원
-y_hat = GlobalAveragePooling1D()(y_hat) #2차원
-..
+y_hat = GlobalAveragePooling1D()(y_hat) #2차원  
 ```
