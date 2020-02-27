@@ -13,7 +13,7 @@
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy', #categorical_crossentropy -> sparse_categorical_crossentropy
               metrics=['sparse_categorical_accuracy']) #accuracy -> sparse_categorical_accuracy
-``
+```
 
 
 - one-hot-encoding shape 맞출때(3차원->2차원) 적용방안
