@@ -15,9 +15,10 @@ model.compile(optimizer='adam',
               metrics=['sparse_categorical_accuracy']) #accuracy -> sparse_categorical_accuracy
 ``
 
+
 - one-hot-encoding shape 맞출때(3차원->2차원) 적용방안
 ```
-... 3차원
+.. 3차원
 y_hat = GlobalAveragePooling1D()(y_hat) #2차원
-...
-``
+..
+```
