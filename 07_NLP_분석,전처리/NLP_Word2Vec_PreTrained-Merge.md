@@ -52,7 +52,7 @@ print(model)
 model.intersect_word2vec_format(fname=pre_trained_feature, binary=True, encoding='utf-8', unicode_errors='ignore')
 print(model)
 
-# predict 모델 저장/업로드
+# 저장/업로드
 model_name = model_name + '_merge'
 model.save(model_name)
 upload_weight('', model_name, drive)
@@ -76,6 +76,7 @@ gcp_download(model_name_t, key = '14PAkIBiVPI9GHvGIo6MOyU6XfBdtJKit')
 model = Word2Vec.load('/tmp/' + model_name)
 print(model)
 
+embeddings_index = {}
 idx2word = model.wv.index2word
 for idx in range(len(idx2word)):
 	word = idx2word[idx]
