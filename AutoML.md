@@ -15,3 +15,5 @@
 
 ![automl_2](https://user-images.githubusercontent.com/45334819/77118866-8d738780-6a78-11ea-95ca-9884d726c136.jpg)
 
+![image](https://user-images.githubusercontent.com/45334819/77119171-44700300-6a79-11ea-9808-3b3ba80e8777.png)  
+
