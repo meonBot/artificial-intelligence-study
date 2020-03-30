@@ -59,7 +59,7 @@ setInterval(ClickConnect,60000)
 ### 10. Colab tensorflow 2.x 오류 -> 1.x downgrade 및 적용방법
 - 오류 캡쳐:
 ![image](https://user-images.githubusercontent.com/45334819/77914903-96aef080-72d1-11ea-9e55-2b75caab86fe.png)
-- down-grade 방법:
+- downgrade 방법:
 ```
 %tensorflow_version 1.x
 import tensorflow
