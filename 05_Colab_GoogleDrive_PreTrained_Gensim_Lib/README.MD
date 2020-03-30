@@ -55,3 +55,14 @@ setInterval(ClickConnect,60000)
 > 간혹, pre-trained data(6G)를 여러번 다운로드 하는경우(하루 최대 70~80G?) IO오류가 발생함  
 > 다른 계정으로 진행시 문제없음  
 ![image](https://user-images.githubusercontent.com/45334819/74835457-bfea7180-5360-11ea-8ad1-4d3b7f8d06d4.png)  
+
+### 10. Colab tensorflow 2.x 오류 -> 1.x downgrade 및 적용방법
+- 오류 캡쳐:
+![image](https://user-images.githubusercontent.com/45334819/77914903-96aef080-72d1-11ea-9e55-2b75caab86fe.png)
+- down-grade 방법:
+```
+%tensorflow_version 1.x
+import tensorflow
+
+#!pip install tensorflow==1.14.0 # 이렇게 직접 2.x uninstall 및 1.14 install하는 방식은 여전히 오류존재
+```
