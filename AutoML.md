@@ -17,3 +17,5 @@
 
 ![image](https://user-images.githubusercontent.com/45334819/77119171-44700300-6a79-11ea-9808-3b3ba80e8777.png)  
 
+- 단점
+1. 비용: 하루~이틀 사용하는데 50$ 청구됨  
