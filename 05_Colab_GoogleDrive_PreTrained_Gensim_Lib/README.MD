@@ -66,3 +66,23 @@ import tensorflow
 
 #!pip install tensorflow==1.14.0 # 이렇게 직접 2.x uninstall 및 1.14 install하는 방식은 여전히 오류존재
 ```
+
+### 11. Colab -> GCP Upload 오류 해결방안
+
+- 오류상세 : RedirectMissingLocation: Redirected but the response is missing a Location: header.
+- 버전 확인
+> !pip list
+> httplib2                 0.17.1
+> google-api-python-client 1.7.12  
+
+- 해결방안 참고 : https://github.com/tokland/youtube-upload/issues/293
+```
+!pip uninstall google-api-python-client -y
+!pip uninstall oauth2client -y
+!pip uninstall progressbar2 -y
+!pip uninstall httplib2 -y
+!pip install google-api-python-client==1.7.3
+!pip install oauth2client==4.1.2
+!pip install progressbar2==3.38.0
+!pip install httplib2==0.15.0
+```
