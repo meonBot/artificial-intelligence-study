@@ -71,11 +71,12 @@ import tensorflow
 
 - 오류상세 : RedirectMissingLocation: Redirected but the response is missing a Location: header.
 - 버전 확인
-> !pip list
-> httplib2                 0.17.1
-> google-api-python-client 1.7.12  
+> !pip list  
+> httplib2                 0.17.1  
+> google-api-python-client 1.7.12    
 
-- 해결방안 참고 : https://github.com/tokland/youtube-upload/issues/293
+- 참고 : https://github.com/tokland/youtube-upload/issues/293
+- 해결방안 : 아래와 같이 특정 lib를 삭제하고, downgrade하여 재설치  
 ```
 !pip uninstall google-api-python-client -y
 !pip uninstall oauth2client -y
