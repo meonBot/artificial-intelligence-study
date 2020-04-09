@@ -55,3 +55,35 @@ setInterval(ClickConnect,60000)
 > 간혹, pre-trained data(6G)를 여러번 다운로드 하는경우(하루 최대 70~80G?) IO오류가 발생함  
 > 다른 계정으로 진행시 문제없음  
 ![image](https://user-images.githubusercontent.com/45334819/74835457-bfea7180-5360-11ea-8ad1-4d3b7f8d06d4.png)  
+
+### 10. Colab tensorflow 2.x 오류 -> 1.x downgrade 및 적용방법
+- 오류 캡쳐:
+![image](https://user-images.githubusercontent.com/45334819/77914903-96aef080-72d1-11ea-9e55-2b75caab86fe.png)
+- downgrade 방법:
+```
+%tensorflow_version 1.x
+import tensorflow
+
+#!pip install tensorflow==1.14.0 # 이렇게 직접 2.x uninstall 및 1.14 install하는 방식은 여전히 오류존재
+```
+
+### 11. Colab -> GCP Upload 오류 해결방안
+
+- 오류상세 : RedirectMissingLocation: Redirected but the response is missing a Location: header.
+- 버전 확인
+> !pip list  
+> httplib2                 0.17.1  
+> google-api-python-client 1.7.12    
+
+- 참고 : https://github.com/tokland/youtube-upload/issues/293
+- 해결방안 : 아래와 같이 특정 lib를 삭제하고, downgrade하여 재설치  
+```
+!pip uninstall google-api-python-client -y
+!pip uninstall oauth2client -y
+!pip uninstall progressbar2 -y
+!pip uninstall httplib2 -y
+!pip install google-api-python-client==1.7.3
+!pip install oauth2client==4.1.2
+!pip install progressbar2==3.38.0
+!pip install httplib2==0.15.0
+```
