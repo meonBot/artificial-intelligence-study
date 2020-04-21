@@ -51,7 +51,7 @@ Skipping recording uncaught error from XHR: unknown name [object ErrorEvent]
 VM2494:3 Uncaught TypeError: Cannot read property 'click' of null
     at ClickConnect (<anonymous>:3:57)
 ```
-- mouse_auto_click.py (참고: https://stackoverflow.com/questions/54057011/google-colab-session-timeout#new-answer)
+- 다른 해결책(마우스 자동클릭 방식): mouse_auto_click.py (참고: https://stackoverflow.com/questions/54057011/google-colab-session-timeout#new-answer)
   를 local(window등)환경에서 실행하고, s클릭시 마우스 포인트의 좌클릭이 시작됨
 
 ### 8. Colab Pro (Colab 유로버전)
