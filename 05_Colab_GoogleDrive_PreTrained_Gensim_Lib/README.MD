@@ -44,6 +44,15 @@ function ClickConnect(){
 }
 setInterval(ClickConnect,60000)
 ```
+- 해당 기능이, 아래와 같이 오류가 발생 사용할수 없음(2020년 1분이 어느시점에서 부턴가)
+```
+Skipping recording uncaught error from XHR: unknown name [object ErrorEvent]
+(anonymous) @ external_polymer_binary_l10n__ko.js?vrz=colab-20200417-085601-RC00_307029476:1551
+VM2494:3 Uncaught TypeError: Cannot read property 'click' of null
+    at ClickConnect (<anonymous>:3:57)
+```
+- mouse_auto_click.py (참고: https://stackoverflow.com/questions/54057011/google-colab-session-timeout#new-answer)
+  를 local(window등)환경에서 실행하고, s클릭시 마우스 포인트의 좌클릭이 시작됨
 
 ### 8. Colab Pro (Colab 유로버전)
 - jupyter notebook만 사용하는경우, GCP 서버 설치할 필요없이, 유로버전으로 싼가격으로 빠르게 작업가능!
