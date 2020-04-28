@@ -14,7 +14,7 @@
 
 <br>
 
-### 3. 논문 Study, 모델학습
+### 3. 논문 Study
 #### 3-1. [Seq2Seq, Embedding, Attention, TFIDF, Bert](https://github.com/jukyellow/artificial-intelligence-study/tree/master/06_%EB%85%BC%EB%AC%B8_study)  
 #### 3-2. [클러스터링](https://github.com/jukyellow/artificial-intelligence-study/tree/master/03_%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)  
 
