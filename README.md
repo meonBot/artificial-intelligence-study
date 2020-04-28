@@ -22,6 +22,7 @@
 
 ### 4. Library  
 #### 4-1. [Library(Colab,GoogleDrive,Gensim,Pre-Trained)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib)
+#### 4-2 [Auto-ML](https://github.com/jukyellow/artificial-intelligence-study/tree/master/05_Colab_GoogleDrive_PreTrained_Gensim_Lib/AutoML)  
 
 <br>
 
