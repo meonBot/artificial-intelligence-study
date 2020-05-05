@@ -49,3 +49,6 @@ with open(file_name, 'rb') as r_handler:
 print('loaded_dic:', l_dic)      
 >> loaded_dic: {'word': ['a', 'b', 'c'], 'weight': ['1.1', '2.5', '0.1'], 'hs': ['1234', '5678', '0001']}
 ```
+
+#### 5. python list정렬 후 정렬전 index 뽑기
+: 05_python_dictionary_sort.py
