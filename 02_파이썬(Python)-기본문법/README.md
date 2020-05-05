@@ -51,4 +51,4 @@ print('loaded_dic:', l_dic)
 ```
 
 #### 5. python list정렬 후 정렬전 index 뽑기
-: 05_python_dictionary_sort.py
+: https://github.com/jukyellow/artificial-intelligence-study/blob/master/02_%ED%8C%8C%EC%9D%B4%EC%8D%AC(Python)-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95/05_python_dictionary_sort.py
