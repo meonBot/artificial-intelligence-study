@@ -33,7 +33,8 @@
 <br>
 
 ### 6. 데이터 분석(data analysis)  
-#### [Data Analysis](https://github.com/jukyellow/artificial-intelligence-study/tree/master/10_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D)  
+#### 6-1. [Data Analysis](https://github.com/jukyellow/artificial-intelligence-study/tree/master/10_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D)  
+<br>
 
-### 6. 연구
-#### 6-1. Semi-supervised learning(준지도학습)  
+### 7. 연구
+#### 7-1. Semi-supervised learning(준지도학습)  
