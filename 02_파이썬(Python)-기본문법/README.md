@@ -49,6 +49,14 @@ with open(file_name, 'rb') as r_handler:
 print('loaded_dic:', l_dic)      
 >> loaded_dic: {'word': ['a', 'b', 'c'], 'weight': ['1.1', '2.5', '0.1'], 'hs': ['1234', '5678', '0001']}
 ```
+<br>
 
 #### 5. python list정렬 후 정렬전 index 뽑기
 : https://github.com/jukyellow/artificial-intelligence-study/blob/master/02_%ED%8C%8C%EC%9D%B4%EC%8D%AC(Python)-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95/05_python_dictionary_sort.py
+<br>
+
+#### 6. python Excel read/write
+https://github.com/jukyellow/artificial-intelligence-study/blob/master/02_%ED%8C%8C%EC%9D%B4%EC%8D%AC(Python)-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95/06_python_excel_read.md  
+<br>
+
+
