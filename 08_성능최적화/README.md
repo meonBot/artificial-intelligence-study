@@ -6,4 +6,4 @@
 
 ### 2. [One-Hot-Encoding 메모리 문제해결, sparse_categorical_crossentropy](https://github.com/jukyellow/artificial-intelligence-study/blob/master/08_%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/02_sparse_categorical_crossentropy.md)  
 
-### 3. [성능평가](https://github.com/jukyellow/artificial-intelligence-study/blob/master/08_%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/03_keras_metrics_performance_eval_ver1_1_20200618.ipynb)
+### 3. [성능평가(keras, sklearn)](https://github.com/jukyellow/artificial-intelligence-study/blob/master/08_%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/03_keras_metrics_performance_eval_ver1_1_20200618.ipynb)
