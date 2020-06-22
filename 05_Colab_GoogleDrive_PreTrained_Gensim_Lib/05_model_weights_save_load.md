@@ -46,7 +46,7 @@ test_model = load_model('./models/cls_att_20191117.h5', custom_objects={'Attenti
 # 모델을 로딩하지 않고, 모델은 생성하고 weight는 로딩하는경우 weight값이 제대로 로딩되지 않음(이유는 확인못함)
 
 test_model.load_weights(weights_file, by_name=True)
-test_model.compile(optimizer='adam', loss='categorical_crossentropy')
+#test_model.compile(optimizer='adam', loss='categorical_crossentropy')
 #->predict...
 ```
 
