@@ -16,4 +16,4 @@
 
 ### 5. Imbalance data 처리
 #### 5-1. Data Normailzation(Over/Under Sampling)
-#### 5-2. Focal-loss
+#### [5-2. Focal-loss](https://github.com/jukyellow/artificial-intelligence-study/blob/master/08_%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/05_2_keras_focal_loss_test_20200709.ipynb)
