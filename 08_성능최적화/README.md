@@ -13,3 +13,7 @@
 #### 4-1. Bagging(랜던포레스트),Boosting(그레디언트부스팅)
 
 #### 4-2. 모델 Averaging
+
+### 5. Imbalance data 처리
+#### 5-1. Data Normailzation(Over/Under Sampling)
+#### 5-2. Focal-loss
