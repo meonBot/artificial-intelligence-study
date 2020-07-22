@@ -96,3 +96,9 @@ import tensorflow
 !pip install progressbar2==3.38.0
 !pip install httplib2==0.15.0
 ```
+<br>
+
+### 12. Colab Error[input/output Error] 해결방법
+-오류 : OSError: [Errno 5] Input/output error  
+- 해결방안: google drive 파일 삭제  
+![image](https://user-images.githubusercontent.com/45334819/88229290-743f4980-ccab-11ea-8f2b-40ca512e76fc.png)
