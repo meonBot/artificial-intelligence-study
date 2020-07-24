@@ -102,3 +102,8 @@ import tensorflow
 -오류 : OSError: [Errno 5] Input/output error  
 - 해결방안: google drive 파일 삭제  
 ![image](https://user-images.githubusercontent.com/45334819/88229290-743f4980-ccab-11ea-8f2b-40ca512e76fc.png)
+<br>
+
+### 13. Colab Memory 35G까지 늘리는 방법
+- Colab pro(고용량 RAM: 25G) -> 런타임유형 변경(TPU: 35G !!!)  
+<br>
