@@ -108,7 +108,9 @@ train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
     (Regularization을 위해 Weight값을 제곱하고 평균낸 값을 더함 ) 
   ![image](https://user-images.githubusercontent.com/45334819/59364991-ba20a300-8d72-11e9-8946-c6f5dbe517fa.png)  
   - 개선방법2 > <b>Weight 값 초기화( ex: Xavier Initializer, He initializer 등)</b>  
-  - 개선방법3 > dropout  
+  - 개선방법3 > dropout   
+  
+  *** 참고: https://subinium.github.io/introduction-to-normalization/  
 
 ### Vanishing Gradient(기술기가 사라지는 문제) 해결방안: active함수(Sigmoid->Relu)
 ![image](https://user-images.githubusercontent.com/45334819/74583734-871f6500-500d-11ea-9aeb-7b66e44ac833.png)
