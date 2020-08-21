@@ -42,7 +42,8 @@ def get_word_cleaning_sentence(input_list, label, skip_word_cnt_vec, MIN_WORD_LE
     p = re.compile('[a-zA-Z]*[\d*\.\d+]*') # socks6264100p16whitel 1.25kg -> socks6264100 p16 whitel 1.25 kg
     word_list = p.findall(input_list)
     word_list = (' '.join(word_list)).split() #연속된공백을 하나로 줄여줌        
-
+    print('1word_list:', word_list)
+    
     word_list = extract_extra_word_digit(word_list, "([a-zA-Z]+)([\d*\.\d+]*)") #영문+단어를 분리하고 기존 단어뒤에 추가, socks6264100 iphone9.1 -> socks 6264100 iphone 9.1
     print('2word_list:', word_list)
 
