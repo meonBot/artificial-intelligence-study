@@ -38,5 +38,6 @@
 
 ### 7. 연구
 #### 7-1. [Semi-supervised learning(준지도학습)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/06_%EB%85%BC%EB%AC%B8_study/06_Semi-Supervised)
+#### 7-2. Co-Teaching 
 <br>
 
