@@ -37,4 +37,5 @@
 import tensorflow as tf
 loss = tf.keras.losses.SparseCategoricalCrossentropy()
 loss_value = loss(y_data, predictions)
+#scce(y_true, y_pred).numpy() -> ex) 1.256
 ```
