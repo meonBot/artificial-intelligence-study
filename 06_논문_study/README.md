@@ -43,3 +43,18 @@ spacer.space("안녕만나서반가워내이름은뽀로로라고해")
 ### 5. NLTK(Natural Language Toolkit) 자연어 처리 패키지  
 - https://datascienceschool.net/view-notebook/118731eec74b4ad3bdd2f89bab077e1b/  
 
+<br>
+
+### 6. Bert/Transfomer
+
+<br>
+
+### 7. Semi-supervised Learning (Ladder Network)
+
+<br>
+
+### 8. GAN
+<br>
+
+### 9. Co-teaching (noise label -> clean label)  
+
