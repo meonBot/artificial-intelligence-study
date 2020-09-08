@@ -17,3 +17,22 @@
 ### 5. Imbalance data 처리
 #### 5-1. Data Normailzation(Over/Under Sampling)
 #### [5-2. Focal-loss](https://github.com/jukyellow/artificial-intelligence-study/blob/master/08_%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/05_2_keras_focal_loss_test_20200709.ipynb)
+
+### 6. Data Normalization  
+### 6-1. OverSampling, UnderSampling  
+### 6-2. MinMaxSacaler  
+
+### 7. Weight handling
+### 7-1. class_weight  
+### 7-2. sample-weight
+
+### 8. K-Fold Validation
+
+### 9. Cross-Entropy loss  
+- https://wikidocs.net/71597, 
+- https://www.tensorflow.org/api_docs/python/tf/keras/losses/SparseCategoricalCrossentropy?hl=ko
+```
+import tensorflow as tf
+loss = tf.keras.losses.SparseCategoricalCrossentropy()
+loss_value = loss(y_data, predictions)
+```
