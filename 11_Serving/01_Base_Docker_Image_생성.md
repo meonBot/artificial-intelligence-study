@@ -38,5 +38,9 @@ flask
 
 ### 6. docker hub 올리기  
 > 계정가입  
-
+> docker login -u 계정ID -p 계정비번  
+(docker tag <업로드할 이미지의 ID> <이용자ID>/<생성된 리파지토리 이름>:<임의의 태그이름>)  
+>  docker tag 6fd42dab78d2 jukyellow/keras-flask:base  
+(docker push <이용자ID>/<생성된 리파지토리 이름>:<임의의 태그이름>)  
+> docker push jukyellow/keras-flask:base  
 
