@@ -6,6 +6,7 @@
 tensorflow  
 keras
 sklearn
+pandas  
 flask
 ```
 
@@ -22,16 +23,18 @@ flask
 > pip install keras  
 > pip install sklearn  
 > pip install flask  
+> pip install pandas  
 
 : keras-2.4.3 pyyaml-5.3.1  
 : joblib-0.16.0 scikit-learn-0.23.2 sklearn-0.0 threadpoolctl-2.1.0  
 : Jinja2-2.11.2 MarkupSafe-1.1.1 click-7.1.2 flask-1.1.2 itsdangerous-1.1.0  
+: pandas-1.1.2 python-dateutil-2.8.1 pytz-2020.1  
 
 ### 5.이미지 commit(굽기)
 > 4)번에서 install후 종료하기 전에, 다른 cmd창에서 해당 이미지 굽기  
 > docker commit competent_proskuriakova tf/keras-flask  
 
-> 1.54G(tensorflow) -> 1.58G(keras/sklearn/flask)  
+> 1.54G(tensorflow) -> 1.64G(keras/sklearn/flask)  
 
 ### 6. docker hub 올리기  
 > 계정가입  
