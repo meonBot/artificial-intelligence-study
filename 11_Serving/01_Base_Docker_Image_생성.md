@@ -44,3 +44,10 @@ flask
 (docker push <이용자ID>/<생성된 리파지토리 이름>:<임의의 태그이름>)  
 > docker push jukyellow/keras-flask:base  
 
+### 문제발생: 아래 docker run 실행초반에 발생하고, 이후에 GPU접근문제인지/메모리 문제인지 log없이 갑자기 죽음
+> =>cuda 설치 or 기존의 dockerfile을 참고하는 방식으로 변경!  
+```
+2020-09-16 02:31:21.137005: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-09-16 02:31:21.137056: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+```
+
