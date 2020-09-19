@@ -57,6 +57,7 @@ spacer.space("안녕만나서반가워내이름은뽀로로라고해")
 <br>
 
 ### 9. Co-teaching (noise label -> clean label)  
+> https://bluediary8.tistory.com/43  
 ### 9-1. Understanding and Utilizing Deep Neural Networks Trained with Noisy Labels
 > https://github.com/Mestrace/co-teaching/blob/master/cot/task.py
 ### 9-2. co-teaching, robust training of deep neural networks with extremely noisy labels
