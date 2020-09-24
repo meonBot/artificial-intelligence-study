@@ -5,3 +5,5 @@
 > CPU버전 : https://github.com/ufoym/deepo/blob/master/docker/Dockerfile.keras-py36-cpu    
 > GPU버전 : https://github.com/ufoym/deepo/blob/master/docker/Dockerfile.keras-py36-cu101  
 
+> dockerfile 빌드 명령어: docker build -t jukyellow/keras-downgrade-flask:cpu .
+
