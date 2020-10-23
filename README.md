@@ -4,6 +4,7 @@
 #### 1-1. [KAIST-AI-집중교육(Sckit-Learn, Tensorflow)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/01_KAIST-AI-%EC%A7%91%EC%A4%91%EA%B5%90%EC%9C%A1)
 #### 1-2. [KOSTA-Chatbot-Word Embedding(Keras)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/04_KOSTA-Chatbot-Keras)  
 #### 1-3. [성균관대 기초수학/인공지능 강좌](http://matrix.skku.ac.kr/math4ai/)  
+#### 1-4. [카이스트 공개강좌](https://academy.kaist.ac.kr/pages/sub/sub03_03) 
 
 <br>
 
