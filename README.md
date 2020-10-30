@@ -3,7 +3,7 @@
 ### 1. 오프라인 & 온라인 교육  
 #### 1-1. [(오프라인) KAIST-AI-집중교육(Sckit-Learn, Tensorflow)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/01_KAIST-AI-%EC%A7%91%EC%A4%91%EA%B5%90%EC%9C%A1)
 #### 1-2. [(오프라인) KOSTA-Chatbot-Word Embedding(Keras)](https://github.com/jukyellow/artificial-intelligence-study/tree/master/04_KOSTA-Chatbot-Keras)  
-#### 1-3. [(온라인) 성균관대 기초수학/인공지능 강좌](http://matrix.skku.ac.kr/math4ai/)  
+#### 1-3. [(온라인) 성균관대 기초수학/인공지능 강좌](https://github.com/jukyellow/artificial-intelligence-study/blob/master/00_%EA%B8%B0%EC%B4%88%EC%88%98%ED%95%99/README.md)  
 #### 1-4. [(온라인) 카이스트 공개강좌](https://academy.kaist.ac.kr/pages/sub/sub03_03) 
 
 <br>
