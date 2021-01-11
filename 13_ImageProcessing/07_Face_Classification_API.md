@@ -6,10 +6,12 @@
 > Face Extraction(canvas img), Webcam Face Tracking...  
 
 ### 2. FaceNet
-> keras/sklearn version
+> keras/sklearn version  
 > https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/  
 > Face Extraction(MCNN), classification(FaceNet)  
 > https://github.com/jukyellow/artificial-intelligence-study/blob/master/13_ImageProcessing/06_keras_FaceNet_sample(Sklearn_SVC)_20210105.ipynb  
 
-
+### 3. Google Teachable Machine
+> https://teachablemachine.withgoogle.com/  
+> Imgage/Pose Training, Model export(cloud, json), Javascript deploy source  
 
