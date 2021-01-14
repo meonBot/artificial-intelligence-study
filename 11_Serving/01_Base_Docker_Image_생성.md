@@ -53,8 +53,8 @@ flask
 <br>
 
 ## 7. deepo keras-dockerfile 빌드 및 base이미지 사용
-> deepo/keras-cpu버전 dockerfile: https://github.com/ufoym/deepo/blob/master/docker/Dockerfile.keras-py36-cpu
-> deepo/keras-cpu버전 + flask 추가버전: 
+> deepo/keras-cpu버전 dockerfile: https://github.com/ufoym/deepo/blob/master/docker/Dockerfile.keras-py36-cpu  
+> deepo/keras-cpu버전 + flask 추가버전: https://github.com/jukyellow/artificial-intelligence-study/tree/master/11_Serving/dockerfile_keras-py36-cpu-flask  
 - 빌드: 
 ```
 docker build -t jukyellow/keras-flask:cpu .
