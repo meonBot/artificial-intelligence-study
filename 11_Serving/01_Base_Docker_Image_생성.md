@@ -1,6 +1,19 @@
 
 # base 이미지 직접 생성하기
 
+## A. dockerfile 방식
+
+### 1. deepo keras-dockerfile 빌드 및 base이미지 사용
+> deepo/keras-cpu버전 dockerfile: https://github.com/ufoym/deepo/blob/master/docker/Dockerfile.keras-py36-cpu  
+> deepo/keras-cpu버전 + flask 추가버전: https://github.com/jukyellow/artificial-intelligence-study/tree/master/11_Serving/dockerfile_keras-py36-cpu-flask  
+- 빌드: 
+```
+docker build -t jukyellow/keras-flask:cpu .
+```
+<br>
+
+## B. (컨테이너 내부) 직접 install 방식
+
 ### 1.필수 패키지(keras serving)  
 ```
 tensorflow  
@@ -51,11 +64,3 @@ flask
 2020-09-16 02:31:21.137056: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
 ```
 <br>
-
-## 7. deepo keras-dockerfile 빌드 및 base이미지 사용
-> deepo/keras-cpu버전 dockerfile: https://github.com/ufoym/deepo/blob/master/docker/Dockerfile.keras-py36-cpu  
-> deepo/keras-cpu버전 + flask 추가버전: https://github.com/jukyellow/artificial-intelligence-study/tree/master/11_Serving/dockerfile_keras-py36-cpu-flask  
-- 빌드: 
-```
-docker build -t jukyellow/keras-flask:cpu .
-```
