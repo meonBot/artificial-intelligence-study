@@ -1,5 +1,6 @@
 
 # base 이미지 직접 생성하기
+<br>
 
 ## A. dockerfile 방식
 
@@ -49,7 +50,17 @@ flask
 
 > 1.54G(tensorflow) -> 1.64G(keras/sklearn/flask)  
 
-### 6. docker hub 올리기  
+### 6. 실행시 문제 발생: 아래 docker run 실행초반에 발생하고, 이후에 GPU접근문제인지/메모리 문제인지 log없이 갑자기 죽음
+> =>cuda 설치 or 기존의 dockerfile을 참고하는 방식으로 변경(A. dockerfile 방식 참고)!  
+```
+2020-09-16 02:31:21.137005: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-09-16 02:31:21.137056: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+```
+<br>
+
+## C. 도커 허브 배포(업로드)
+
+### 1. docker hub 올리기  
 > 계정가입  
 > docker login -u 계정ID -p 계정비번  
 (docker tag <업로드할 이미지의 ID> <이용자ID>/<생성된 리파지토리 이름>:<임의의 태그이름>)  
@@ -57,10 +68,3 @@ flask
 (docker push <이용자ID>/<생성된 리파지토리 이름>:<임의의 태그이름>)  
 > docker push jukyellow/keras-flask:base  
 
-### 문제발생: 아래 docker run 실행초반에 발생하고, 이후에 GPU접근문제인지/메모리 문제인지 log없이 갑자기 죽음
-> =>cuda 설치 or 기존의 dockerfile을 참고하는 방식으로 변경(7번 참고)!  
-```
-2020-09-16 02:31:21.137005: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
-2020-09-16 02:31:21.137056: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
-```
-<br>
