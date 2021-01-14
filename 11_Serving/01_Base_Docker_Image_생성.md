@@ -3,7 +3,7 @@
 
 ## A. dockerfile 방식
 
-### 1. dockerfile 다운로드
+### 1. dockerfile 다운로드 (deepo/keras-cpu버전 + flask 인스톨 추가)
 > deepo/keras-cpu버전 dockerfile: https://github.com/ufoym/deepo/blob/master/docker/Dockerfile.keras-py36-cpu  
 > deepo/keras-cpu버전 + flask 추가버전: https://github.com/jukyellow/artificial-intelligence-study/tree/master/11_Serving/dockerfile_keras-py36-cpu-flask  
 ### 2. 빌드
