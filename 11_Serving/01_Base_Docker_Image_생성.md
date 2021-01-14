@@ -13,12 +13,12 @@ flask
 ### 2. 도커 허브 다운로드
 > docker pull tensorflow/tensorflow
 
-### 3. tensorflow 버전(latest) 확인하기
+### 3. tensorflow 버전(latest) 확인하기(tensorflow 실행후 컨테이너 진입)
 > docker run -p 9001:9001 -it tensorflow/tensorflow /bin/bash  
 > pip freeze   
 : tensorflow==2.3.0  
 
-### 4. tensorflow 이미지에 추가 패키지 인스톨
+### 4. tensorflow 이미지에 추가 패키지 인스톨 (컨테이너 내부에서 설치 명령어 실행)
 > (https://m.blog.naver.com/PostView.nhn?blogId=wideeyed&logNo=221338278344&proxyReferer=https:%2F%2Fwww.google.com%2F)  
 > pip install keras  
 > pip install sklearn  
