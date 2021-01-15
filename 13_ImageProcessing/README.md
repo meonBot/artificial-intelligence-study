@@ -44,4 +44,8 @@
 > Imgage/Pose Training, Model export(cloud, json), Javascript deploy source  
 <br>
 
+## Google Teachable Machine
+
+### 1. Face Recognition Sample
+
 
