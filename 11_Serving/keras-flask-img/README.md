@@ -56,7 +56,6 @@ RUN apt-get install net-tools
 # ImportError: libGL.so.1: cannot open shared object file: No such file or directory
 RUN apt-get install -y libgl1-mesa-glx
 
-## install in image(keras-flask-img)
 # Python Package
 RUN pip install mtcnn
 # numpy latest version error...
