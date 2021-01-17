@@ -1,4 +1,4 @@
-# Flask Server to Web Canvas(Jquery)
+# Flask Server to Web Img(Jquery)
 
 - Case 1. 이미지 파일저장 -> 새로 읽기 -> Byte Array 변환 -> 웹 response  
 - Case 2. PIL Image -> Byte Array 변환 -> 웹 Response  
@@ -107,6 +107,7 @@ $.ajax({
 				if(idx>=5) break;
 			}
 			document.getElementById("camera--output").style.display="block";
+			# <img src="//:0" alt="" id="camera--output"></img>
 			document.getElementById('camera--output').src = 'data:image/jpeg;base64,' + data["face_img"];
 		},
         error: function (e) {
