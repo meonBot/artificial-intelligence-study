@@ -1,4 +1,7 @@
-#
+# Flask Server to Web Canvas(Jquery)
+
+- Case 1. 이미지 파일저장 -> 새로 읽기 -> Byte Array 변환 -> 웹 response  
+- Case 2. PIL Image -> Byte Array 변환 -> 웹 Response  
 
 ### 1. Flask server
 ``` python
