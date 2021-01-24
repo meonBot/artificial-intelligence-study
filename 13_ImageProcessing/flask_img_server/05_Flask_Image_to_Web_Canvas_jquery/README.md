@@ -3,7 +3,7 @@
 - Case 1. 이미지 파일저장 -> 새로 읽기 -> Byte Array 변환 -> 웹 response  
 - Case 2. PIL Image -> Byte Array 변환 -> 웹 Response  
 
-### 1. Flask server
+### 1-1. Flask server
 ``` python
 def extract_face(image, required_size=(128, 128)):
     # load image from file
@@ -33,6 +33,7 @@ def extract_face(image, required_size=(128, 128)):
     image = Image.fromarray(face)
     image = image.resize(required_size)
 
+    # save file(optional)
     imgName = str(uuid.uuid4().hex) + ".jpeg"
     image.save("ext_face/" + imgName)
     print("saved img name:", imgName)
@@ -40,6 +41,12 @@ def extract_face(image, required_size=(128, 128)):
     face_array = asarray(image)
     return face_array, image, imgName
 
+def image_to_byte_array(image):
+	imgByteArr = io.BytesIO()
+	image.save(imgByteArr, format="jpeg") #image.format
+	imgByteArr = imgByteArr.getvalue()
+	return imgByteArr
+	
 @app.route("/face_predict", methods=["POST"])
 def predict():
 	# initialize the data dictionary that will be returned from the
