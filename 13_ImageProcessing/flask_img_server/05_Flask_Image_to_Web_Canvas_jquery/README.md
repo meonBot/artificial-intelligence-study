@@ -1,9 +1,8 @@
 # Flask Server to Web Img(Jquery)
 
+### 1-1. Flask server
 - Case 1. 이미지 파일저장 -> 새로 읽기 -> Byte Array 변환 -> 웹 response  
 - Case 2. PIL Image -> Byte Array 변환 -> 웹 Response  
-
-### 1-1. Flask server
 ``` python
 def extract_face(image, required_size=(128, 128)):
     # load image from file
@@ -64,12 +63,14 @@ def predict():
 			data["predictions"] = results
 			
 			try:
+				#case 1.
 				#1. File Read And extrant binary array
 				#with open("ext_face/" + imgName, "rb") as f:
 				#	image_binary = f.read()
 				#	base64_encode = base64.b64encode(image_binary)
 				#	data["face_img"] = base64_encode.decode('utf8')
 				
+				# case 2.
 				#2. PIL Image to Byte Array
 				base64_encode = base64.b64encode(image_to_byte_array(face_image))
 				data["face_img"] = base64_encode.decode('utf8')
@@ -91,19 +92,39 @@ def predict():
 ```
 
 ### 2. Web Jquery/Canvas
+- FromData -> Jpeg 2 File -> file append to Form -> ajax  
 ``` javascript
-$.ajax({
-        type: "POST",
-        enctype: 'multipart/form-data',
-        url: "http://127.0.0.1:8312/face_predict",
-        data: data,
-        processData: false,
-        contentType: false,
-        cache: false,
-        timeout: 600000,
-        success: function (data) {
-            console.log("data : ", data);
+async function extractImage(canvas) {
+    var imgDataUrl = canvas.toDataURL('image/jpeg');
 
+    var blobBin = atob(imgDataUrl.split(',')[1]);	// base64 데이터 디코딩
+    var array = [];
+    for (var i = 0; i < blobBin.length; i++) {
+        array.push(blobBin.charCodeAt(i));
+    }
+
+    var file = new Blob([new Uint8Array(array)], {type: 'image/jpeg'});	// Blob 생성
+
+    var formdata = new FormData();	// formData 생성
+    formdata.append("image", file);	// file data 추가
+	return formdata
+}
+async function request_predict(canvas){
+	var data = await extractImage(canvas);
+	data.append("is_capture", is_save_img);
+	data.append("is_mobile", is_mobile);
+
+	$.ajax({
+		type: "POST",
+		enctype: 'multipart/form-data',
+		url: "http://127.0.0.1:8312/face_predict",
+		data: data,
+		processData: false,
+		contentType: false,
+		cache: false,
+		timeout: 600000,
+		success: function (data) {
+		    	console.log("data : ", data);
 			let idx=0;
 			for (let pred of data["predictions"]) {
 				let key = pred[0]
@@ -114,12 +135,12 @@ $.ajax({
 				if(idx>=5) break;
 			}
 			document.getElementById("camera--output").style.display="block";
-			# <img src="//:0" alt="" id="camera--output"></img>
 			document.getElementById('camera--output').src = 'data:image/jpeg;base64,' + data["face_img"];
 		},
-        error: function (e) {
-            console.log("ERROR : ", e);
-			labelContainer.childNodes[0].innerHTML = "오류:"+e.responseText;
-        }
-    });
+		error: function (e) {
+		    console.log("ERROR : ", e);
+				labelContainer.childNodes[0].innerHTML = "오류:"+e.responseText;
+		}
+	    });
+}
 ```
