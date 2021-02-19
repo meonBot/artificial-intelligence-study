@@ -5,6 +5,7 @@
 ```
 docker pull jukyellow/keras-flask-img:cpu-sklearn
 ```
+- base image 생성 방법: https://github.com/jukyellow/artificial-intelligence-study/tree/master/11_Serving/keras-flask-img  
 
 ### 2. 도커 face-net 서버 설치/구동
 ```
